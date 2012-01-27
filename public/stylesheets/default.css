@@ -1,52 +1,76 @@
 /*-------------------------+
- *  | Site: Open City         |
- *   | Part: Master stylesheet |
- *    +-------------------------*/
+ | Site: Open City         |
+ | Part: Master stylesheet |
+ +-------------------------*/
 
 
 /* Imports
- * =====================================================================*/
-/*
+=====================================================================*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800);
 @import "reset.css";
-*/
 
 
 /* Fonts
- * ======================================================================*/
+======================================================================*/
 body { font-family: "Open Sans", Arial, sans-serif; }
 
 
 /* Basics
- * ======================================================================*/
+======================================================================*/
 a { color: #012d4c; text-decoration: none; }
 a:hover { text-decoration: underline; }
-body { background: url(../images/bg.png) repeat-x 0 0; font-size: 16px; line-height: 1.4; padding: 100px 0; }
+body { background: url(../images/bg.png) repeat-x 0 0; font-size: 16px; line-height: 1.4; }
 p { margin-bottom: 2em; }
-h1 { margin-bottom: 20px; }
-h1, h2 { text-align: center; }
-h2 { color: #fff; font-size: 28px; font-weight: 300; margin-bottom: 75px; }
+h1 img { width: 599px; }
+h2 { color: #fff; font-size: 28px; font-weight: 300; margin-bottom: 20px; }
 
 
 /* Layout
- * ======================================================================*/
+======================================================================*/
 .clear { clear: both; }
-#page { margin: 0 auto; width: 980px; }
+#about-content, #nav-content, #people-content, #press-content, #projects-content { margin: 0 auto; overflow: hidden; width: 980px; }
+#about-content, #people-content, #press-content, #projects-content { padding: 15px 0; }
+
+/* About */
+#about { padding-top: 75px; }
+#about-primary { float: left; width: 61.02%; }
+#about-secondary { float: right; width: 29.48%; }
 
 
 /* Content
- * ======================================================================*/
-#content { padding-top: 50px; text-align: center; }
+======================================================================*/
 
 /* Icons */
-[class *= "icon"] { background-repeat: no-repeat; background-position: 0 50%; line-height: 1; margin-right: 0.25em; padding: 10px 0 10px 35px; }
-.icon-twitter { background-image: url(../images/twitter.png); }
+/* Icons */
+[class *= "icon"] { background-repeat: no-repeat; background-position: 0 50%; line-height: 1; margin-right: 0.25em; padding: 3px 0 3px 20px; }
+.icon-github { background-image: url(/images/git.png); }
+.icon-twitter { background-image: url(/images/twitter.png); }
 
-/* People */
-#people { font-size: 14px; }
+/* Nav */
+#nav {
+  background: #222222;
+  background: -moz-linear-gradient(top, #222222 0%, #050505 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#050505));
+  background: -webkit-linear-gradient(top, #222222 0%,#050505 100%);
+  background: -o-linear-gradient(top, #222222 0%,#050505 100%);
+  background: -ms-linear-gradient(top, #222222 0%,#050505 100%);
+  background: linear-gradient(top, #222222 0%,#050505 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#050505',GradientType=0 );
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+  font-weight: 300;
+  overflow: hidden;
+  margin-bottom: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
 
-/* Projects */
-.projects { font-size: 21px; font-weight: bold; list-style: none; margin: 0; text-align: center; }
-.projects img { box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); display: block; margin-bottom: 10px; width: 100%; }
-.projects li { float: left; margin-right: 3%; width: 22%; }
+#nav a { color: #ddd; display: block; padding: 0.5em 1em; }
+#nav a:hover { background: rgba(255, 255, 255, 0.05); color: #fff; text-decoration: none; }
+#nav li { float: left; }
 
+/* Sites */
+#sites dd, #sites dt { padding-left: 308px; }
+#sites img { float: left; margin: 3px 0 25px -308px; width: 288px; }
+#sites dt { clear: both; font-size: 25px; font-weight: 700; padding-top: 25px; }

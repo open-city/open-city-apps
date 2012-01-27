@@ -31,26 +31,17 @@
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
+      
+    :javascript
+      $(function(){
+        $("#nav a").click(function() {
+          var elementClicked = $(this).attr("href");
+          var destination = $(elementClicked).offset().top;
+          console.log(destination);
+          $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-75}, 500 );
+          return false;
+        });
+      });
 
   %body
-    #page
-      %h1
-        = image_tag "logo.png", :alt => "Open City"
-
-      %h2
-        Building a better Chicago
-
-      %ul.projects
-        %li
-          = link_to "#{image_tag("clearstreets.png")} Clear Streets", "http://derekeder.com/clearstreets"
-        %li
-          = link_to "#{image_tag("chicagolobbyists.png")} Chicago Lobbyists", "http://chicagolobbyists.org"
-        %li
-          = link_to "#{image_tag("lookatcook.png")} Look at Cook", "http://lookatcook.org"
-        %li
-          = link_to "#{image_tag("metra.png")} Metra Schedules", "http://c82.net/metra"
-
-      .clear
-
-      #content
-        = yield
+    = yield
