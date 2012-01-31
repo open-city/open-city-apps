@@ -1,5 +1,5 @@
 #nav
-  #nav-content
+  .content
     %ul
       %li
         = link_to "About", "#about"
@@ -12,51 +12,48 @@
 
 #page
   #about
-    #about-content
+    .content
       %h1
         = image_tag "logo.png", :alt => "Open City"
-    
-      %h2
-        Building a better Chicago
       
       #about-primary
+        %h2 Building a better Chicago
         %p
           Open City is a new civic startup. We build open gov and open source apps to make cities work better. Interested in getting involved or supporting us? Get in touch at
           = link_to "opencityapps@gmail.com", "mailto:opencityapps@gmail.com"
-        %p
-          = link_to "Follow us on Twitter", "http://www.twitter.com/opencityapps", :class => "icon-twitter"
       
       #about-secondary
-        %script{:charset => "utf-8", :src => 'http://widgets.twimg.com/j/2/widget.js'}
-        :javascript
-          new TWTR.Widget({
-            version: 2,
-            type: 'profile',
-            rpp: 1,
-            interval: 30000,
-            width: 'auto',
-            height: 300,
-            theme: {
-              shell: {
-                background: '#333333',
-                color: '#ffffff'
+        %twitter
+          %script{:charset => "utf-8", :src => 'http://widgets.twimg.com/j/2/widget.js'}
+          :javascript
+            new TWTR.Widget({
+              version: 2,
+              type: 'profile',
+              rpp: 1,
+              interval: 30000,
+              width: 'auto',
+              height: 300,
+              theme: {
+                shell: {
+                  background: 'transparent',
+                  color: '#000000'
+                },
+                tweets: {
+                  background: 'transparent',
+                  color: '#000000',
+                  links: '#012d4c'
+                }
               },
-              tweets: {
-                background: '#000000',
-                color: '#ffffff',
-                links: '#4aed05'
+              features: {
+                scrollbar: false,
+                loop: false,
+                live: false,
+                behavior: 'all'
               }
-            },
-            features: {
-              scrollbar: false,
-              loop: false,
-              live: false,
-              behavior: 'all'
-            }
-          }).render().setUser('opencityapps').start();
+            }).render().setUser('opencityapps').start();
   
   #projects
-    #projects-content
+    .content
       %h2 Projects
       
       %dl#sites
@@ -85,22 +82,75 @@
         %dd Proin elementum nisl nec erat lobortis id sollicitudin nisi ultricies. Duis rutrum, leo ac rutrum accumsan, ligula libero scelerisque justo, eget vestibulum purus massa in libero. Praesent tempus dolor ut lacus vehicula eleifend. Sed tortor arcu, semper vel luctus id, consectetur et ligula. Cras dui enim, porttitor eget feugiat eget, ullamcorper non nulla. Donec enim sem, tincidunt eu iaculis cursus, pharetra eget arcu. Aliquam vitae arcu ut arcu aliquet faucibus sed nec leo.
     
   #press
-    #press-content  
+    .content
+      %h2 Press
+      
+      %dl.press
+        %dt
+          = link_to "Civic startup Open City makes Chicago more transparent", "http://news.medill.northwestern.edu/chicago/news.aspx?id=199203"
+        %dd
+          By Marisa Paulson on 
+          %cite Medill Reports
+          | January 26, 2012
+        
+        %dt
+          = link_to "What streets have been plowed, and when? Check the Web", "http://www.chicagotribune.com/news/ct-talk-snow-tracker-0121-20120121,0,4501133.story"
+        %dd
+          By Naomi Nix on
+          %cite The Chicago Tribune
+          | January 21, 2012
+        
+        %dt
+          = link_to "New Web Project Simplifies City's Open Lobbying Data", "http://chicagoist.com/2011/12/07/new_web_project_simplifies_citys_op.php#photo-1"
+        %dd
+          By Chuck Sudo on
+          %cite Chicagost
+          | December 7, 2011
+        
+        %dt
+          = link_to "Chicagobuildings.org maps vacant and abandoned buildings using open government data", "http://gov20.govfresh.com/chicagobuildings-org-maps-vacant-and-abandoned-buildings-using-open-government-data/"
+        %dd
+          By Alex Howard on 
+          %cite govfresh
+          | October 12 2011
+        
+        %dt
+          = link_to "Look at Cook sets a high bar for open government data visualizations", "http://radar.oreilly.com/2011/09/look-at-cook-gov-data-visualization.html"
+        %dd
+          By Alex Howard on
+          %cite O'Reilly Radar
+          | September 7 2011
+        
+        %dt
+          = link_to "Mayor Emanuel Announces New Lobbyist Data that Provides Clear Connection From Employers to Lobbyists to City Hall", "http://www.cityofchicago.org/city/en/depts/mayor/press_room/press_releases/2011/august_2011/mayor_emanuel_announcesnewlobbyistdatathatprovidesclearconnectio.html"
+        %dd By Mayor's Press office, City of Chicago | August 30th 2011
   
   #people
-    #people-content
-      %p#people
-        Our people:
-      
-        = link_to "Paul Baker", "http://twitter.com/paulbaker", :rel => :external
-        ,
-        = link_to "Jim Breen", "http://twitter.com/jimbreen", :rel => :external
-        ,
-        = link_to "Derek Eder", "http://twitter.com/derek_eder", :rel => :external
-        ,
-        = link_to "Chad W Pry", "http://about.me/pry", :rel => :external
-        ,
-        Forest Gregg
-        ,
-        = link_to "Nick Rougeux", "http://twitter.com/rougeux", :rel => :external
-      
+    .content
+      %h2 People
+      %ul#people
+        %li
+          %h3
+            = link_to "#{image_tag("http://dummyimage.com/165")} Paul Baker", "http://twitter.com/paulbaker"
+          %p Paul, a former typographer, has been designing websites since 1995. He has presented extensively on topics such as design research, usability, and social networking. He is a jazz musician and gigs frequently around Chicago.
+        %li
+          %h3
+            = link_to "#{image_tag("http://dummyimage.com/165")} Derek Eder", "http://www.derekeder.com"
+          %p Derek is a Chicago web developer interested in open government, transit, maps, web design, and usability. He is an event organizer for the OpenGov Chicago Meetup group.
+        %li
+          %h3
+            = link_to "#{image_tag("http://dummyimage.com/165")} Chad Pry", "http://about.me/pry"
+          %p Experienced in mentoring, conversation, programming, open data, and the love of food.
+        %li
+          %h3
+            = link_to "#{image_tag("http://dummyimage.com/165")} Nick Rougeux", "http://twitter.com/rougeux"
+          %p Nick's a designer who's passionate about finding new ways to explore data but knows just enough from his programming days to still be dangerous.
+        %li
+          %h3
+            = link_to "#{image_tag("http://dummyimage.com/165")} Jim Breen", "http://twitter.com/jimbreen"
+          %p Proin condimentum enim sit amet dolor sodales varius. Aenean elementum blandit magna, eu porta erat dapibus nec. Nam justo nulla, tristique nec porttitor posuere, fringilla eu urna.
+  
+  #footer
+    .content
+      Get in touch at
+      = link_to "opencityapps@gmail.com", "mailto:opencityapps@gmail.com"

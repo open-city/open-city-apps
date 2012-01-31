@@ -19,17 +19,19 @@ body { font-family: "Open Sans", Arial, sans-serif; }
 ======================================================================*/
 a { color: #012d4c; text-decoration: none; }
 a:hover { text-decoration: underline; }
-body { background: url(../images/bg.png) repeat-x 0 0; font-size: 16px; line-height: 1.4; }
-p { margin-bottom: 2em; }
+body { background: url(../images/bg.png) repeat-x 0 0 fixed; font-size: 16px; line-height: 1.4; }
+cite, em { font-style: italic; }
+dl, ol, table, p, ul { margin-bottom: 2em; }
+h1 { margin-bottom: 20px; }
 h1 img { width: 599px; }
-h2 { color: #fff; font-size: 28px; font-weight: 300; margin-bottom: 20px; }
+h2 { font-size: 28px; font-weight: 300; margin-bottom: 20px; }
+strong { font-weight: bold; }
 
 
 /* Layout
 ======================================================================*/
 .clear { clear: both; }
-#about-content, #nav-content, #people-content, #press-content, #projects-content { margin: 0 auto; overflow: hidden; width: 980px; }
-#about-content, #people-content, #press-content, #projects-content { padding: 15px 0; }
+.content { background: #fff; background: rgba(255, 255, 255, 0.9); border-radius: 7px; box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); margin: 0 auto 20px; overflow: hidden; padding: 15px 20px; width: 940px; }
 
 /* About */
 #about { padding-top: 75px; }
@@ -40,7 +42,9 @@ h2 { color: #fff; font-size: 28px; font-weight: 300; margin-bottom: 20px; }
 /* Content
 ======================================================================*/
 
-/* Icons */
+/* About */
+#about .content { background: none; box-shadow: none; margin-bottom: 0; }
+
 /* Icons */
 [class *= "icon"] { background-repeat: no-repeat; background-position: 0 50%; line-height: 1; margin-right: 0.25em; padding: 3px 0 3px 20px; }
 .icon-github { background-image: url(/images/git.png); }
@@ -66,11 +70,30 @@ h2 { color: #fff; font-size: 28px; font-weight: 300; margin-bottom: 20px; }
   z-index: 1000;
 }
 
-#nav a { color: #ddd; display: block; padding: 0.5em 1em; }
+#nav a { color: #ccc; display: block; padding: 0.5em 1em; }
+#nav a.current, #nav a.current:hover { color: #fff; }
 #nav a:hover { background: rgba(255, 255, 255, 0.05); color: #fff; text-decoration: none; }
+#nav .content { background: none; box-shadow: none; margin-bottom: 0; padding: 0; }
 #nav li { float: left; }
+
+/* People */
+#people { font-size: 14px; list-style: none; margin: 0; }
+#people h3 { font-size: 20px; font-weight: bold; }
+#people li { float: left; margin-right: 3%; width: 17%; }
+#people li:last-child { margin: 0; }
+
+/* Press */
+#press dd { color: #666; font-size: 13px; margin-bottom: 0.75em; }
 
 /* Sites */
 #sites dd, #sites dt { padding-left: 308px; }
 #sites img { float: left; margin: 3px 0 25px -308px; width: 288px; }
 #sites dt { clear: both; font-size: 25px; font-weight: 700; padding-top: 25px; }
+#sites dt:first-child { padding-top: 0; }
+
+/* Twitter widget */
+#twitter .twtr-ft, #twitter .twtr-hd { display: none; }
+#twitter .twtr-tweet { border: 0; margin-bottom: 1em; }
+#twitter .twtr-tweet-wrap { padding: 0; }
+#twitter .twtr-widget { font-size: 13px !important; }
+#twitter .twtr-widget p { line-height: 1.4 !important; }
