@@ -17,7 +17,7 @@ body { font-family: "Open Sans", Arial, sans-serif; }
 
 /* Basics
 ======================================================================*/
-a { color: #012d4c; text-decoration: none; }
+a { color: #1478bc; text-decoration: none; }
 a:hover { text-decoration: underline; }
 body { background: url(../images/bg.png) repeat-x 0 0 fixed; font-size: 16px; line-height: 1.4; }
 cite, em { font-style: italic; }
@@ -43,7 +43,7 @@ strong { font-weight: bold; }
 ======================================================================*/
 
 /* About */
-#about .content { background: none; box-shadow: none; margin-bottom: 0; }
+#about .content { background: none; box-shadow: none; margin-bottom: 0; padding-right: 0; width: 955px; }
 
 /* Icons */
 [class *= "icon"] { background-repeat: no-repeat; background-position: 0 50%; line-height: 1; margin-right: 0.25em; padding: 3px 0 3px 20px; }
@@ -83,7 +83,16 @@ strong { font-weight: bold; }
 #people li:last-child { margin: 0; }
 
 /* Press */
-#press dd { color: #666; font-size: 13px; margin-bottom: 0.75em; }
+#press dd { color: #888; font-size: 13px; margin-bottom: 0.75em; }
+
+.press {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 4em;
+  -webkit-column-gap: 4em;
+  column-gap: 4em;
+}
 
 /* Sites */
 #sites dd, #sites dt { padding-left: 308px; }
@@ -92,7 +101,9 @@ strong { font-weight: bold; }
 #sites dt:first-child { padding-top: 0; }
 
 /* Twitter widget */
-#twitter .twtr-ft, #twitter .twtr-hd { display: none; }
+#twitter { background: rgba(255, 255, 255, 0.3); border-radius: 7px; padding: 15px; }
+#twitter .twtr-ft div { padding: 0; }
+#twitter .twtr-hd { padding: 0 0 10px; }
 #twitter .twtr-tweet { border: 0; margin-bottom: 1em; }
 #twitter .twtr-tweet-wrap { padding: 0; }
 #twitter .twtr-widget { font-size: 13px !important; }
