@@ -1,29 +1,56 @@
-%p
-  Open City is a new civic startup. We build open gov and open source apps to make cities work better.
-  %br
-  Interested in getting involved or supporting us? Get in touch at
-  = link_to "opencityapps@gmail.com", "mailto:opencityapps@gmail.com"
+%h2
+  Projects Built with Open Data
 
-%p
-  = link_to "Follow us on Twitter", "http://www.twitter.com/opencityapps", :class => "icon-twitter"
+%ul.projects
+  %li
+    = link_to "#{image_tag("cpstiers.png")} Chicago Public School Tiers", "http://cpstiers.opencityapps.org"
+  %li
+    = link_to "#{image_tag("clearstreets.png")} Clear Streets", "http://clearstreets.org"
+  %li
+    = link_to "#{image_tag("chicagolobbyists.png")} Chicago Lobbyists", "http://chicagolobbyists.org"
+  %li
+    = link_to "#{image_tag("buildings.png")} Vacant Building Finder", "http://chicagobuildings.org"
 
-%p#people
-  Founders:
+.clear
+   
+%ul.projects
+  %li &nbsp;
+  %li
+    = link_to "#{image_tag("lookatcook.png")} Look at Cook", "http://lookatcook.org"
+  %li
+    = link_to "#{image_tag("metra.png")} Metra Schedules", "http://c82.net/metra"
+  %li &nbsp;
 
-  = link_to "Paul Baker", "http://twitter.com/paulbaker", :rel => :external
-  ,
-  = link_to "Derek Eder", "http://derekeder.com", :rel => :external
-  ,
-  = link_to "Chad W Pry", "http://about.me/pry", :rel => :external
-  ,
-  = link_to "Nick Rougeux", "http://twitter.com/rougeux", :rel => :external
+.clear
+
+#content
+
+  %p
+    Open City is a new civic startup. We build open gov and open source apps to make cities work better.
+    %br
+    Interested in getting involved or supporting us? Get in touch at
+    = link_to "opencityapps@gmail.com", "mailto:opencityapps@gmail.com"
   
-  %br
-  Collaborators:
+  %p
+    = link_to "Follow us on Twitter", "http://www.twitter.com/opencityapps", :class => "icon-twitter"
   
-  = link_to "Jim Breen", "http://twitter.com/jimbreen", :rel => :external
-  ,
-  Forest Gregg
-  ,
-  Juan-Pablo Velez
+  %p#people
+    Founders:
+  
+    = link_to "Paul Baker", "http://twitter.com/paulbaker", :rel => :external
+    ,
+    = link_to "Derek Eder", "http://derekeder.com", :rel => :external
+    ,
+    = link_to "Chad W Pry", "http://about.me/pry", :rel => :external
+    ,
+    = link_to "Nick Rougeux", "http://twitter.com/rougeux", :rel => :external
+    
+    %br
+    Collaborators:
+    
+    = link_to "Jim Breen", "http://twitter.com/jimbreen", :rel => :external
+    ,
+    Forest Gregg
+    ,
+    Juan-Pablo Velez
 
