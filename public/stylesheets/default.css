@@ -19,7 +19,7 @@ body { font-family: "Open Sans", Arial, sans-serif; }
  * ======================================================================*/
 a { color: #012d4c; text-decoration: none; }
 a:hover { text-decoration: underline; }
-body { background: url(../images/bg.png) repeat-x 0 0; font-size: 16px; line-height: 1.4; padding: 20px 0; }
+body { background: url(../images/bg.png) repeat-x 0 0; font-size: 16px; line-height: 1.4; padding: 40px 0; }
 p { margin-bottom: 2em; }
 h1 { margin-bottom: 16px; }
 h1, h2 { text-align: center; }
