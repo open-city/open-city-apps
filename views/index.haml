@@ -13,10 +13,9 @@
 #page
   #about
     .content
-      %h1
-        = image_tag "logo.png", :alt => "Open City"
-      
       #about-primary
+        %h1
+          = image_tag "logo.png", :alt => "Open City"
         %h2 Building a better Chicago
         %p
           Open City is a new civic startup. We build open gov and open source apps to make cities work better.      
@@ -56,7 +55,13 @@
       
       %dl#sites
         %dt
-          = link_to "#{image_tag("clearstreets.png")} Clear Streets", "http://derekeder.com/clearstreets"
+          = link_to "#{image_tag("projects/cpstiers.png")} Chicago Public School Tiers", "http://cpstiers.opencityapps.org"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/cps-tiers", :class => "icon-github"
+        %dd In Chicago, a student's chance of getting into the city's top, selective schools depends on where he or she lives. Chicago Public Schools (CPS) places every part of the city into one of four socio-economic "tiers" and requires selective schools to reserve the same number of spots for the students from each tier. This tool helps you find what CPS tier your are in.
+        
+        %dt
+          = link_to "#{image_tag("projects/clearstreets.png")} Clear Streets", "http://derekeder.com/clearstreets"
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/clearstreets-web", :class => "icon-github"
         %dd 
@@ -65,22 +70,28 @@
           , an app that tracks the city's snow plows in real time. This app uses the same data. By knowing where the plows are, we've figured which streets have been plowed.
         
         %dt
-          = link_to "#{image_tag("chicagolobbyists.png")} Chicago Lobbyists", "http://chicagolobbyists.org"
+          = link_to "#{image_tag("projects/chicagolobbyists.png")} Chicago Lobbyists", "http://chicagolobbyists.org"
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/chicago-lobbyists-web", :class => "icon-github"
         %dd ChicagoLobbyists.org is an open data, open government, and open source project intended to improve the transparency of interactions between the City of Chicago and lobbyists and their clients. 
         
         %dt
-          = link_to "#{image_tag("lookatcook.png")} Look at Cook", "http://lookatcook.org"
+          = link_to "#{image_tag("projects/vacantbuildingfinder.png")} Vacant and Abandoned Building Finder", "http://chicagobuildings.org"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/chicago-lobbyists-web", :class => "icon-github"
+        %dd Find vacant and abandoned buildings in Chicago. Data comes from reports made for open and vacant buildings to 311 since January 1, 2010. 
+        
+        %dt
+          = link_to "#{image_tag("projects/lookatcook.png")} Look at Cook", "http://lookatcook.org"
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/look-at-cook", :class => "icon-github"
         %dd Look at Cook is an easy-to-understand budget visualization for Cook County IL, which tracks government budgets and expenditures from 1993-2011 broken down by year and department. Developed in collaboration with Cook County Commissioner John Fritchey.
         
         %dt
-          = link_to "#{image_tag("metra.png")} Metra Schedules", "http://c82.net/metra"
+          = link_to "#{image_tag("projects/metra.png")} Metra Schedules", "http://c82.net/metra"
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/metra-service-changes", :class => "icon-github"
-        %dd Proin elementum nisl nec erat lobortis id sollicitudin nisi ultricies. Duis rutrum, leo ac rutrum accumsan, ligula libero scelerisque justo, eget vestibulum purus massa in libero. Praesent tempus dolor ut lacus vehicula eleifend. Sed tortor arcu, semper vel luctus id, consectetur et ligula. Cras dui enim, porttitor eget feugiat eget, ullamcorper non nulla. Donec enim sem, tincidunt eu iaculis cursus, pharetra eget arcu. Aliquam vitae arcu ut arcu aliquet faucibus sed nec leo.
+        %dd Created to visualize Metra's proposed 2012 service cuts due to high operating costs and shows how much of an impact the changes would have on riders' schedules. How the final result came about was a mixture of curiosity and fun with a pinch of obsession.
     
   #press
     .content
@@ -88,12 +99,35 @@
       
       %dl.press
         %dt
+          = link_to "Open City launches New App to Help Parents Know Which Chicago Public Schools Tier They Live In", "http://chicagood.com/blog/2012/03/open-city-launches-new-app-to-help-parents-which-chicago-public-schools-tier-they-live-in/"
+        %dd
+          %cite
+            Chicagood
+          | March 9, 2012
+        
+        %dt
+          = link_to "Chicago Public School Tiers: New app to help CPS applicants", "http://chicagotonight.wttw.com/2012/03/09/chicago-public-school-tiers"
+        %dd
+          %cite
+            Chicago Tonight
+            (WTTW)
+          | March 9, 2012
+        
+        %dt
+          = link_to "New Web App Makes It Easier For CPS Students To Get Into The Schools They Want", "http://chicagoist.com/2012/03/08/new_web_app_makes_it_easier_for_cps.php"
+        %dd
+          %cite
+            Chicagoist
+          | March 8, 2012
+        
+        %dt
           = link_to "Chicago Data Apps Panel Discussion", "http://chicagotonight.wttw.com/2012/01/31/chicago-data-apps3"
         %dd
           %cite
-            %em Chicago Tonight
+            Chicago Tonight
             (WTTW)
           | January 31, 2012
+        
         %dt
           = link_to "Civic startup Open City makes Chicago more transparent", "http://news.medill.northwestern.edu/chicago/news.aspx?id=199203"
         %dd
@@ -137,34 +171,40 @@
     .content
       %h2 People
       %h3 Founders
-      %ul#people
+      %ul.people
         %li
           %h3
-            = link_to "#{image_tag("http://dummyimage.com/165")} Paul Baker", "http://twitter.com/paulbaker"
+            = link_to "#{image_tag("http://dummyimage.com/210")} Paul Baker", "http://twitter.com/paulbaker"
           %p Paul, a former typographer, has been designing websites since 1995. He has presented extensively on topics such as design research, usability, and social networking. He is a jazz musician and gigs frequently around Chicago.
         %li
           %h3
-            = link_to "#{image_tag("http://dummyimage.com/165")} Derek Eder", "http://www.derekeder.com"
+            = link_to "#{image_tag("http://dummyimage.com/210")} Derek Eder", "http://www.derekeder.com"
           %p Derek is a Chicago web developer interested in open government, transit, maps, web design, and usability. He is an event organizer for the OpenGov Chicago Meetup group.
         %li
           %h3
-            = link_to "#{image_tag("http://dummyimage.com/165")} Chad Pry", "http://about.me/pry"
+            = link_to "#{image_tag("http://dummyimage.com/210")} Chad Pry", "http://about.me/pry"
           %p Experienced in mentoring, conversation, programming, open data, and the love of food.
         %li
           %h3
-            = link_to "#{image_tag("http://dummyimage.com/165")} Nick Rougeux", "http://twitter.com/rougeux"
+            = link_to "#{image_tag("people/nick-rougeux.jpg")} Nick Rougeux", "http://twitter.com/rougeux"
           %p Nick's a designer who's passionate about finding new ways to explore data but knows just enough from his programming days to still be dangerous.
       
       .clear
       %h3 
         Collaborators
-      %ul#people
-        %li 
-          %h3 Jim Breen
-        %li 
-          %h3 Forest Gregg
-        %li 
-          %h3 Juan-Pablo Velez
+      %ul.people
+        %li
+          %h3
+            = link_to "#{image_tag("http://dummyimage.com/210")} Jim Breen", "#"
+          %p Bio
+        %li
+          %h3
+            = link_to "#{image_tag("http://dummyimage.com/210")} Forest Gregg", "#"
+          %p Bio
+        %li
+          %h3
+            = link_to "#{image_tag("http://dummyimage.com/210")} Juan-Pablo Velez", "#"
+          %p Bio
         
           
   

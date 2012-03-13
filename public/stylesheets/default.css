@@ -25,6 +25,7 @@ dl, ol, table, p, ul { margin-bottom: 2em; }
 h1 { margin-bottom: 20px; }
 h1 img { width: 599px; }
 h2 { font-size: 28px; font-weight: 300; margin-bottom: 20px; }
+h3 { font-size: 23px; font-weight: 600; }
 strong { font-weight: bold; }
 
 
@@ -77,10 +78,10 @@ strong { font-weight: bold; }
 #nav li { float: left; }
 
 /* People */
-#people { font-size: 14px; list-style: none; margin: 0; }
-#people h3 { font-size: 20px; font-weight: bold; }
-#people li { float: left; margin-right: 3%; width: 17%; }
-#people li:last-child { margin: 0; }
+.people { font-size: 14px; list-style: none; margin: 0; }
+.people h3 { font-size: 20px; font-weight: bold; }
+.people li { float: left; margin-right: 3%; width: 22%; }
+.people li:last-child { margin: 0; }
 
 /* Press */
 #press dd { color: #888; font-size: 13px; margin-bottom: 0.75em; }
@@ -89,14 +90,14 @@ strong { font-weight: bold; }
   -moz-column-count: 2;
   -webkit-column-count: 2;
   column-count: 2;
-  -moz-column-gap: 4em;
-  -webkit-column-gap: 4em;
-  column-gap: 4em;
+  -moz-column-gap: 2em;
+  -webkit-column-gap: 2em;
+  column-gap: 2em;
 }
 
 /* Sites */
 #sites dd, #sites dt { padding-left: 308px; }
-#sites img { float: left; margin: 3px 0 25px -308px; width: 288px; }
+#sites img { border: 1px solid #ddd; float: left; margin: 3px 0 25px -308px; width: 288px; }
 #sites dt { clear: both; font-size: 25px; font-weight: 700; padding-top: 25px; }
 #sites dt:first-child { padding-top: 0; }
 
