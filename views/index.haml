@@ -1,56 +1,217 @@
-%h2
-  Projects built with open data
+#nav
+  .content
+    %ul
+      %li
+        = link_to "About", "#about"
+      %li
+        = link_to "Projects", "#projects"
+      %li
+        = link_to "Press", "#press"
+      %li
+        = link_to "People", "#people"
 
-%ul.projects
-  %li
-    = link_to "#{image_tag("cpstiers.png")} Chicago Public School Tiers", "http://cpstiers.opencityapps.org"
-  %li
-    = link_to "#{image_tag("clearstreets.png")} Clear Streets", "http://clearstreets.org"
-  %li
-    = link_to "#{image_tag("chicagolobbyists.png")} Chicago Lobbyists", "http://chicagolobbyists.org"
-  %li
-    = link_to "#{image_tag("buildings.png")} Vacant Building Finder", "http://chicagobuildings.org"
-
-.clear
-   
-%ul.projects
-  %li &nbsp;
-  %li
-    = link_to "#{image_tag("lookatcook.png")} Look at Cook", "http://lookatcook.com"
-  %li
-    = link_to "#{image_tag("metra.png")} Metra Schedules", "http://c82.net/metra"
-  %li &nbsp;
-
-.clear
-
-#content
-
-  %p
-    Open City is a new civic startup. We build open gov and open source apps to make cities work better.
-    %br
-    Interested in getting involved or supporting us? Get in touch at
-    = link_to "opencityapps@gmail.com", "mailto:opencityapps@gmail.com"
+#page
+  #about
+    .content
+      #about-primary
+        %h1
+          = image_tag "logo.png", :alt => "Open City"
+        %h2 Civic apps built with open data
+        %p
+          Open City is a civic startup that creates web apps with open data to improve transparency, efficiency, and decision-making.  
+      #about-secondary
+        #twitter
+          %script{:charset => "utf-8", :src => 'http://widgets.twimg.com/j/2/widget.js'}
+          :javascript
+            new TWTR.Widget({
+              version: 2,
+              type: 'profile',
+              rpp: 1,
+              interval: 30000,
+              width: 'auto',
+              height: 300,
+              theme: {
+                shell: {
+                  background: 'transparent',
+                  color: '#000000'
+                },
+                tweets: {
+                  background: 'transparent',
+                  color: '#000000',
+                  links: '#012d4c'
+                }
+              },
+              features: {
+                scrollbar: false,
+                loop: false,
+                live: false,
+                behavior: 'all'
+              }
+            }).render().setUser('opencityapps').start();
   
-  %p
-    = link_to "Follow us on Twitter", "http://www.twitter.com/opencityapps", :class => "icon-twitter"
-  
-  %p#people
-    Founders:
-  
-    = link_to "Paul Baker", "http://twitter.com/paulbaker", :rel => :external
-    ,
-    = link_to "Derek Eder", "http://derekeder.com", :rel => :external
-    ,
-    = link_to "Chad W Pry", "http://about.me/pry", :rel => :external
-    ,
-    = link_to "Nick Rougeux", "http://twitter.com/rougeux", :rel => :external
+  #projects
+    .content
+      %h2 Projects
+      
+      %dl#sites
+        %dt
+          = link_to "#{image_tag("projects/cpstiers.png")} Chicago Public School Tiers", "http://cpstiers.opencityapps.org"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/cps-tiers", :class => "icon-github"
+        %dd In Chicago, a student's chance of getting into the city's top, selective schools depends on where he or she lives. Chicago Public Schools (CPS) places every part of the city into one of four socio-economic "tiers" and requires selective schools to reserve the same number of spots for the students from each tier. This tool helps you find what CPS tier your are in.
+        
+        %dt
+          = link_to "#{image_tag("projects/clearstreets.png")} Clear Streets", "http://derekeder.com/clearstreets"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/clearstreets-web", :class => "icon-github"
+        %dd 
+          On January 3rd 2012, the City of Chicago launched 
+          = link_to "Plow Tracker", "http://www.cityofchicago.org/content/city/en/depts/mayor/iframe/plow_tracker.html"
+          , an app that tracks the city's snow plows in real time. This app uses the same data. By knowing where the plows are, we've figured which streets have been plowed.
+        
+        %dt
+          = link_to "#{image_tag("projects/chicagolobbyists.png")} Chicago Lobbyists", "http://chicagolobbyists.org"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/chicago-lobbyists-web", :class => "icon-github"
+        %dd ChicagoLobbyists.org is an open data, open government, and open source project intended to improve the transparency of interactions between the City of Chicago and lobbyists and their clients. 
+        
+        %dt
+          = link_to "#{image_tag("projects/vacantbuildingfinder.png")} Vacant and Abandoned Building Finder", "http://chicagobuildings.org"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/chicago-lobbyists-web", :class => "icon-github"
+        %dd Find vacant and abandoned buildings in Chicago. Data comes from reports made for open and vacant buildings to 311 since January 1, 2010. 
+        
+        %dt
+          = link_to "#{image_tag("projects/lookatcook.png")} Look at Cook", "http://lookatcook.org"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/look-at-cook", :class => "icon-github"
+        %dd Look at Cook is an easy-to-understand budget visualization for Cook County IL, which tracks government budgets and expenditures from 1993-2011 broken down by year and department. Developed in collaboration with Cook County Commissioner John Fritchey.
+        
+        %dt
+          = link_to "#{image_tag("projects/metra.png")} Metra Schedules", "http://c82.net/metra"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/metra-service-changes", :class => "icon-github"
+        %dd Created to visualize Metra's proposed 2012 service cuts due to high operating costs and shows how much of an impact the changes would have on riders' schedules. How the final result came about was a mixture of curiosity and fun with a pinch of obsession.
     
-    %br
-    Collaborators:
-    
-    = link_to "Jim Breen", "http://twitter.com/jimbreen", :rel => :external
-    ,
-    Forest Gregg
-    ,
-    = link_to "Juan-Pablo Velez", "http://jpvelez.contently.com/", :del => :external
-
+  #press
+    .content
+      %h2 Press
+      
+      %dl.press
+        %dt
+          = link_to "Changing The Code: Government Data And Digital Entrepreneurship", "http://blog.cookcountygov.com/opencc/live-streaming-event-changing-the-code-government-data-and-digital-entrepreneurship/"
+        %dd
+          %cite
+            Cook County
+          | April 25, 2012
+        
+        %dt
+          = link_to "App Helps Figure Odds for Chicago's Elite High School Seats", "http://blogs.edweek.org/edweek/parentsandthepublic/"
+        %dd
+          %cite
+            Education Week
+          | March 23, 2012
+        
+        %dt
+          = link_to "Chicago Public School Tiers: New app to help CPS applicants", "http://chicagotonight.wttw.com/2012/03/09/chicago-public-school-tiers"
+        %dd
+          %cite
+            Chicago Tonight
+            (WTTW)
+          | March 9, 2012
+        
+        %dt
+          = link_to "New Web App Makes It Easier For CPS Students To Get Into The Schools They Want", "http://chicagoist.com/2012/03/08/new_web_app_makes_it_easier_for_cps.php"
+        %dd
+          %cite
+            Chicagoist
+          | March 8, 2012
+        
+        %dt
+          = link_to "Chicago Data Apps Panel Discussion", "http://chicagotonight.wttw.com/2012/01/31/chicago-data-apps3"
+        %dd
+          %cite
+            Chicago Tonight
+            (WTTW)
+          | January 31, 2012
+        
+        %dt
+          = link_to "Civic startup Open City makes Chicago more transparent", "http://news.medill.northwestern.edu/chicago/news.aspx?id=199203"
+        %dd
+          By Marisa Paulson on 
+          %cite Medill Reports
+          | January 26, 2012
+        
+        %dt
+          = link_to "What streets have been plowed, and when? Check the Web", "http://www.chicagotribune.com/news/ct-talk-snow-tracker-0121-20120121,0,4501133.story"
+        %dd
+          By Naomi Nix on
+          %cite The Chicago Tribune
+          | January 21, 2012
+        
+        %dt
+          = link_to "New Web Project Simplifies City's Open Lobbying Data", "http://chicagoist.com/2011/12/07/new_web_project_simplifies_citys_op.php#photo-1"
+        %dd
+          By Chuck Sudo on
+          %cite Chicagost
+          | December 7, 2011
+        
+        %dt
+          = link_to "Chicagobuildings.org maps vacant and abandoned buildings using open government data", "http://gov20.govfresh.com/chicagobuildings-org-maps-vacant-and-abandoned-buildings-using-open-government-data/"
+        %dd
+          By Alex Howard on 
+          %cite govfresh
+          | October 12 2011
+        
+        %dt
+          = link_to "Look at Cook sets a high bar for open government data visualizations", "http://radar.oreilly.com/2011/09/look-at-cook-gov-data-visualization.html"
+        %dd
+          By Alex Howard on
+          %cite O'Reilly Radar
+          | September 7 2011
+        
+        %dt
+          = link_to "Mayor Emanuel Announces New Lobbyist Data that Provides Clear Connection From Employers to Lobbyists to City Hall", "http://www.cityofchicago.org/city/en/depts/mayor/press_room/press_releases/2011/august_2011/mayor_emanuel_announcesnewlobbyistdatathatprovidesclearconnectio.html"
+        %dd By Mayor's Press office, City of Chicago | August 30th 2011
+  
+  #people
+    .content
+      %h2 People
+      %h3 Founders
+      %ul.people
+        %li
+          %h3
+            = link_to "#{image_tag("people/paul-baker.jpg")} <br /> Paul Baker", "http://twitter.com/paulbaker"
+          %p Paul, a former typographer, has been designing websites since 1995. He has presented extensively on topics such as design research, usability, and social networking. He is a jazz musician and gigs frequently around Chicago.
+        %li
+          %h3
+            = link_to "#{image_tag("people/derek-eder.jpg")} <br /> Derek Eder", "http://www.derekeder.com"
+          %p Derek is a Chicago web developer interested in open government, transit, maps, web design, and usability. He is an event organizer for the OpenGov Chicago Meetup group.
+        %li
+          %h3
+            = link_to "#{image_tag("people/chad-w-pry.jpg")} <br /> Chad Pry", "http://about.me/pry"
+          %p Chad is experienced in mentoring, conversation, programming, open data, and the love of food.
+        %li
+          %h3
+            = link_to "#{image_tag("people/nick-rougeux.jpg")} <br /> Nick Rougeux", "http://twitter.com/rougeux"
+          %p Nick's a designer who's passionate about finding new ways to explore data but knows just enough from his programming days to still be dangerous.
+      
+      .clear
+      %h3 
+        Collaborators
+      %ul.people
+        %li
+          %h3
+            = link_to "#{image_tag("people/jim-breen.jpg")} <br /> Jim Breen", "https://twitter.com/jimbreen"
+        %li
+          %h3
+            = link_to "#{image_tag("people/ryan-briones.jpg")} <br /> Ryan Briones", "http://ryanbriones.com/"  
+        %li
+          %h3
+            = link_to "#{image_tag("people/juan-pablo-velez.jpg")} <br /> Juan-Pablo Velez", "http://jpvelez.contently.com/" 
+          
+  
+  #footer
+    .content
+      Get in touch at
+      = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
