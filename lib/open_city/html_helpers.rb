@@ -6,7 +6,7 @@ module OpenCity
     end
 
     def include_favicon name, options={}
-      href = "/images/#{name}.ico" unless name.to_s.match(/^http/)
+      href = "/#{name}.ico" unless name.to_s.match(/^http/)
       content_tag :link, nil, options.merge(:rel => "shortcut icon", :href => (href || name))
     end
 
