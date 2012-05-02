@@ -52,7 +52,14 @@
   #projects
     .content
       %h2 Projects
-      
+      %p 
+        All of our projects are 
+        = link_to "open source", "https://github.com/open-city"
+        and free to use under the MIT license. 
+        
+        Want to bring one of these apps to your city, municipality or organization? Get in touch at 
+        = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
+
       %dl#sites
         %dt
           = link_to "#{image_tag("projects/cpstiers.png")} Chicago Public School Tiers", "http://cpstiers.opencityapps.org"
@@ -73,6 +80,8 @@
           = link_to "#{image_tag("projects/chicagolobbyists.png")} Chicago Lobbyists", "http://chicagolobbyists.org"
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/chicago-lobbyists-web", :class => "icon-github"
+          |
+          = link_to "Chicago Lobbyists blog", "http://blog.chicagolobbyists.org"
         %dd ChicagoLobbyists.org is an open data, open government, and open source project intended to improve the transparency of interactions between the City of Chicago and lobbyists and their clients. 
         
         %dt
