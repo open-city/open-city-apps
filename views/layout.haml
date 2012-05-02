@@ -13,25 +13,9 @@
     = include_stylesheet :default
 
     = include_javascript "jquery"
-    = include_javascript "analytics"
-    = include_javascript "jquery.ga-event-tracker"
-
-    = include_stylesheet "http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800"
 
     = content :javascript
-
-    - if production?
-      :javascript
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-28508534-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      
+  
     :javascript
       $(function(){
         $("#nav a").click(function() {
@@ -47,3 +31,7 @@
 
   %body
     = yield
+    
+    - if production?
+      = include_javascript "analytics"
+      = include_javascript "jquery.ga-event-tracker"
