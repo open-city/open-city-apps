@@ -60,7 +60,8 @@
         and free to use under the MIT license. 
         
         Want to bring one of these apps to your city, municipality or organization? Get in touch at 
-        = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
+        = succeed '.' do
+          = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
 
       %dl#sites
         %dt
@@ -76,7 +77,9 @@
         %dd 
           On January 3rd 2012, the City of Chicago launched 
           = link_to "Plow Tracker", "http://www.cityofchicago.org/content/city/en/depts/mayor/iframe/plow_tracker.html"
-          , an app that tracks the city's snow plows in real time. This app uses the same data. By knowing where the plows are, we've figured out which streets have been plowed.
+          , an app that tracks the city's snow plows in real time. This app uses the same data. By knowing where the plows are, we've figured out which streets have been plowed. Featured in Google's 
+          = succeed '.' do
+            = link_to "Fusion Tables Example Gallery", "https://sites.google.com/site/fusiontablestalks/stories#collaborate"
         
         %dt
           = link_to "#{image_tag("projects/chicagolobbyists.png")} Chicago Lobbyists", "http://chicagolobbyists.org"
@@ -90,13 +93,16 @@
           = link_to "#{image_tag("projects/vacantbuildingfinder.png")} Vacant and Abandoned Building Finder", "http://chicagobuildings.org"
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/chicago-lobbyists-web", :class => "icon-github"
-        %dd Find vacant and abandoned buildings in Chicago. Data comes from reports made for open and vacant buildings to 311 since January 1, 2010. 
+        %dd ChicagoBuildings.org is a tool for finding vacant and abandoned buildings in Chicago. The data comes from reports made to the City of Chicago's 311 reporting service and is updated regularly. 
         
         %dt
           = link_to "#{image_tag("projects/lookatcook.png")} Look at Cook", "http://lookatcook.org"
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/look-at-cook", :class => "icon-github"
-        %dd Look at Cook is an easy-to-understand budget visualization for Cook County IL, which tracks government budgets and expenditures from 1993-2011 broken down by year and department. Developed in collaboration with Cook County Commissioner John Fritchey.
+        %dd 
+          Look at Cook is an easy-to-understand budget visualization for Cook County IL, which tracks government budgets and expenditures from 1993-2011 broken down by year and department. Developed in collaboration with Cook County Commissioner John Fritchey. Featured in Google's 
+          = succeed '.' do
+            = link_to "Fusion Tables Example Gallery", "https://sites.google.com/site/fusiontablestalks/stories#API"
         
         %dt
           = link_to "#{image_tag("projects/metra.png")} Metra Schedules", "http://c82.net/metra"
@@ -136,6 +142,14 @@
           %cite
             Education Week
           | March 23, 2012
+          
+        %dt
+          = link_to "Educating Chicago", "http://codeforamerica.org/2012/03/15/educating-chicago/"
+        %dd
+          By Ben Sheldon on
+          %cite
+            Code for America Blog
+          | March 15, 2012
         
         %dt
           = link_to "Chicago Public School Tiers: New app to help CPS applicants", "http://chicagotonight.wttw.com/2012/03/09/chicago-public-school-tiers"
@@ -155,7 +169,7 @@
         %dt
           = link_to "Shovel Ready", "http://www.ascentstage.com/archives/2012/02/shovel-ready/"
         %dd
-          By John Tolva
+          By John Tolva on
           %cite
             Ascent Stage
           | February 21, 2012
@@ -200,7 +214,7 @@
         %dt
           = link_to "Open data in Chicago: progress and direction", "http://www.ascentstage.com/archives/2012/01/open-data-in-chicago/"
         %dd
-          By John Tolva
+          By John Tolva on
           %cite
             Ascent Stage
           | January 1, 2012
@@ -284,4 +298,5 @@
   #footer
     .content
       Have a suggestion or feedback on one of our apps? Want us to use your city or municipality's data for a new project? Get in touch at
-      = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
+      = succeed '.' do
+        = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
