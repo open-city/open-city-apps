@@ -21,11 +21,9 @@
         $("#nav a").click(function() {
           var elementClicked = $(this).attr("href");
           var destination = $(elementClicked).offset().top;
-          console.log(destination);
           $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-75}, 500 );
           $("#nav a").removeClass("current");
           $(this).addClass("current");
-          return false;
         });
       });
 
