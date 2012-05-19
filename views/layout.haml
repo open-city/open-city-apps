@@ -33,5 +33,4 @@
     = yield
     
     - if production?
-      = include_javascript "analytics"
-      = include_javascript "jquery.ga-event-tracker"
+      = include_javascript :analytics_lib
