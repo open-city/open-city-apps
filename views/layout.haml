@@ -33,4 +33,5 @@
     = yield
     
     - if production?
+      = include_javascript "jquery.ba-hashchange"
       = include_javascript :analytics_lib
