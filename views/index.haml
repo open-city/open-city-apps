@@ -117,10 +117,7 @@
       %h3 
         Open Government Hack Night
       %p
-        - if Date.parse('2012-5-29') < Date.today
-          Every Tuesday from 6:00pm - 10:00pm
-        - else
-          Every Thursday from 6:00pm - 10:00pm
+        Every Tuesday from 6:00pm - 10:00pm
       %p
         Open City hosts a weekly opengov hack night every week. The goal is to have a recurring time and place to work, collaborate and learn with others on projects using open data. Come join a the group of passionate open government members!
         
@@ -132,14 +129,11 @@
         %br
         Chicago, IL 60654
         %br
-        - if Date.parse('2012-5-29') < Date.today
-          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-e01e2"
-        - elsif Date.parse('2012-5-24') < Date.today
-          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-5cf69"  
-        - elsif Date.parse('2012-5-17') < Date.today
-          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-963f2"    
-        - elsif Date.parse('2012-5-10') < Date.today
-          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-6d191"
+        /see https://docs.google.com/spreadsheet/ccc?key=0AtbqcVh3dkAqdGN6dnozemV2Nk5EMWdCUFZkMmRZMGc&pli=1#gid=0 for list
+        - if Date.parse('2012-6-12') < Date.today
+          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-d8edb"
+        - elsif Date.parse('2012-6-5') < Date.today
+          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-f0698"
   
   #press
     .content
