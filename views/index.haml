@@ -6,6 +6,8 @@
       %li
         = link_to "Projects", "#projects"
       %li
+        = link_to "Tools", "#tools"
+      %li
         = link_to "Events", "#events"
       %li
         = link_to "Press", "#press"
@@ -110,6 +112,36 @@
           = link_to "GitHub repository", "https://github.com/open-city/metra-service-changes", :class => "icon-github"
         %dd Created to visualize Metra's proposed 2012 service cuts due to high operating costs and shows how much of an impact the changes would have on riders' schedules. How the final result came about was a mixture of curiosity and fun with a pinch of obsession.
     
+  #tools
+    .content
+      %h2 Tools
+      
+      %dl#tools
+        %dt
+          Python Dedupe Library 
+          %span.mute
+            (in development)
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/dedupe", :class => "icon-github"
+          |
+          = link_to "Knight News Challenge submission", "http://newschallenge.tumblr.com/post/25546531302/python-library-to-make-sense-of-campaign-contribution"
+          |
+          = link_to "Big Data De-duping presentation", "http://pyvideo.org/video/973/big-data-de-duping"
+        %dd A free python library for accurate and scaleable deduplication and entity-resolution. We are building this tool to accurately find all campaign contributions made by a single person or organization, but it can be used to de-duplicate any large dataset.
+        
+        %dt
+          Fusion Library
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/fusion_library", :class => "icon-github"
+        %dd A javascript library that makes it easy to integrate <a href='https://developers.google.com/maps/documentation/javascript/'>Google Maps</a> and <a href='http://www.google.com/fusiontables'>Fusion Tables</a>.
+        
+        %dt
+          Site Template
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/site-template", :class => "icon-github"
+        %dd 
+          Simple site template using Ruby, <a href='www.sinatrarb.com'>Sinatra</a> and Haml with tie-ins to <a href='www.heroku.com'>Heroku</a> and Google Analytics. Used to build the Open City website!
+  
   #events
     .content
       %h2 Events
@@ -130,10 +162,12 @@
         Chicago, IL 60654
         %br
         /see https://docs.google.com/spreadsheet/ccc?key=0AtbqcVh3dkAqdGN6dnozemV2Nk5EMWdCUFZkMmRZMGc&pli=1#gid=0 for list
-        - if Date.parse('2012-6-12') < Date.today
-          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-d8edb"
-        - elsif Date.parse('2012-6-5') < Date.today
-          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-f0698"
+        - if Date.parse('2012-7-3') < Date.today
+          = link_to "RSVP and details", "http://gathers.us/events/open-city-hack-night"
+        - elsif Date.parse('2012-6-26') < Date.today
+          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-2a614"
+        - elsif Date.parse('2012-6-19') < Date.today
+          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-711b0"
   
   #press
     .content

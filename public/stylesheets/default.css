@@ -50,6 +50,9 @@ strong { font-weight: bold; }
 .icon-github { background-image: url(/images/git.png); }
 .icon-twitter { background-image: url(/images/twitter.png); }
 
+/* Muted text */
+.mute { color: #999; font-size: .8em; }
+
 /* Nav */
 #nav {
   background: #222222;
@@ -99,6 +102,10 @@ strong { font-weight: bold; }
 #sites img { border: 1px solid #ddd; float: left; margin: 3px 0 25px -308px; width: 288px; }
 #sites dt { clear: both; font-size: 25px; font-weight: 700; padding-top: 25px; }
 #sites dt:first-child { padding-top: 0; }
+
+/* Tools */
+#tools dt { font-size: 25px; font-weight: 700; padding-top: 25px; }
+#tools dt:first-child { padding-top: 0; }
 
 /* Twitter widget */
 #twitter { background: rgba(255, 255, 255, 0.3); border-radius: 7px; padding: 15px; }
