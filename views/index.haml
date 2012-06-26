@@ -67,6 +67,12 @@
 
       %dl#sites
         %dt
+          = link_to "#{image_tag("projects/crime-in-chicago.png")} Crime in Chicago", "http://www.crimeinchicago.org"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/crime-in-chicago", :class => "icon-github"
+        %dd Crime in Chicago is a data visualization that lets you explore crime trends in Chicago's 50 wards. It was built using <a href='https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2'>open data about Chicago crimes</a> released by the <a href='http://www.cityofchicago.org/police'>Chicago Police Department</a>.
+
+        %dt
           = link_to "#{image_tag("projects/cpstiers.png")} Chicago Public School Tiers", "http://cpstiers.opencityapps.org"
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/cps-tiers", :class => "icon-github"
