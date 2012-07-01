@@ -19,7 +19,7 @@
     .content
       #about-primary
         %h1
-          = image_tag "logo.png", :alt => "Open City"
+          = image_tag "logo.png", :alt => "Open City - Civic apps built with open data"
         %h2 Civic apps built with open data
         %p
           Open City is a group of volunteers that create web apps with open data to improve transparency, efficiency, and decision-making for governments and our democracy.  
@@ -166,12 +166,13 @@
         Chicago, IL 60654
         %br
         /see https://docs.google.com/spreadsheet/ccc?key=0AtbqcVh3dkAqdGN6dnozemV2Nk5EMWdCUFZkMmRZMGc&pli=1#gid=0 for list
-        - if Date.parse('2012-7-3') < Date.today
-          = link_to "RSVP and details", "http://gathers.us/events/open-city-hack-night"
-        - elsif Date.parse('2012-6-26') < Date.today
-          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-2a614"
-        - elsif Date.parse('2012-6-19') < Date.today
-          = link_to "RSVP and details", "http://gathers.us/events/open-government-hack-night-organized-by-open-city-711b0"
+        - if Date.parse('2012-7-10') < Date.today
+          = link_to "July 17th RSVP and details", "http://gathers.us/events/open-city-hack-night-b5752"
+        - elsif Date.parse('2012-6-29') < Date.today
+          = link_to "July 10th RSVP and details", "http://gathers.us/events/open-city-hack-night"
+          
+        %p
+          %em Note: We are taking 7/3 off due to the 4th of July Holiday. See everyone on the 10th!
   
   #press
     .content
