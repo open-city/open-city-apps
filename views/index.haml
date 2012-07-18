@@ -166,13 +166,15 @@
         Chicago, IL 60654
         %br
         /see https://docs.google.com/spreadsheet/ccc?key=0AtbqcVh3dkAqdGN6dnozemV2Nk5EMWdCUFZkMmRZMGc&pli=1#gid=0 for list
-        - if Date.parse('2012-7-10') < Date.today
-          = link_to "July 17th RSVP and details", "http://gathers.us/events/open-city-hack-night-b5752"
-        - elsif Date.parse('2012-6-29') < Date.today
-          = link_to "July 10th RSVP and details", "http://gathers.us/events/open-city-hack-night"
-          
-        %p
-          %em Note: We are taking 7/3 off due to the 4th of July Holiday. See everyone on the 10th!
+        - begin
+          - if Date.parse('2012-7-31') < Date.today
+            = link_to "Aug 7th RSVP and details", "http://gathers.us/events/open-gov-hack-night-organized-by-open-city-ebf93"
+          - elsif Date.parse('2012-7-24') < Date.today
+            = link_to "July 31th RSVP and details", "http://gathers.us/events/open-gov-hack-night-organized-by-open-city-aca95"
+          - elsif Date.parse('2012-7-17') < Date.today
+            = link_to "July 24th RSVP and details", "http://gathers.us/events/open-gov-hack-night-organized-by-open-city"
+        - rescue
+          = "No upcoming events" 
   
   #press
     .content
