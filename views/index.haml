@@ -17,41 +17,11 @@
 #page
   #about
     .content
-      #about-primary
-        %h1
-          = image_tag "logo.png", :alt => "Open City - Civic apps built with open data"
-        %h2 Civic apps built with open data
-        %p
-          Open City is a group of volunteers that create web apps with open data to improve transparency, efficiency, and decision-making for governments and our democracy.  
-      #about-secondary
-        #twitter
-          %script{:charset => "utf-8", :src => 'http://widgets.twimg.com/j/2/widget.js'}
-          :javascript
-            new TWTR.Widget({
-              version: 2,
-              type: 'profile',
-              rpp: 1,
-              interval: 30000,
-              width: 'auto',
-              height: 300,
-              theme: {
-                shell: {
-                  background: 'transparent',
-                  color: '#000000'
-                },
-                tweets: {
-                  background: 'transparent',
-                  color: '#000000',
-                  links: '#012d4c'
-                }
-              },
-              features: {
-                scrollbar: false,
-                loop: false,
-                live: false,
-                behavior: 'all'
-              }
-            }).render().setUser('opencityapps').start();
+      %h1
+        = image_tag "logo.png", :alt => "Open City - Civic apps built with open data"
+      %h2 Civic apps built with open data
+      %p
+        Open City is a group of volunteers that create web apps with open data to improve transparency, efficiency, and decision-making for governments and our democracy.  
   
   #projects
     .content
@@ -66,6 +36,20 @@
           = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
 
       %dl#sites
+        %dt
+          = link_to "#{image_tag("projects/hows-business.jpg")} How's Business?", "http://howsbusinesschicago.org"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/hows-business", :class => "icon-github"
+        %dd 
+          How’s Business provides a dashboard of Chicago’s local economy. It uses open data from the 
+          = succeed ',' do
+            %a{:href => 'http://data.cityofchicago.org'} City of Chicago
+          the 
+          %a{:href => 'http://www.bls.gov/lau/'} Bureau of Labor Statistics
+          and the 
+          %a{:href => 'http://www.woodstockinst.org/'} Woodstock Institute
+          to show how several economic indicators have been trending since 2005.
+
         %dt
           = link_to "#{image_tag("projects/crime-in-chicago.png")} Crime in Chicago", "http://www.crimeinchicago.org"
         %dd
@@ -165,18 +149,7 @@
         %br
         Chicago, IL 60654
         %br
-        /see https://docs.google.com/spreadsheet/ccc?key=0AtbqcVh3dkAqdGN6dnozemV2Nk5EMWdCUFZkMmRZMGc&pli=1#gid=0 for list
-        - begin
-          - if Date.parse('2012-8-28') < Date.today
-            = link_to "Sept 4th RSVP and details", "http://gathers.us/events/open-gov-hack-night-organized-by-open-city-11dd3"
-          - elsif Date.parse('2012-8-21') < Date.today
-            = link_to "Aug 21st RSVP and details", "http://gathers.us/events/open-gov-hack-night-organized-by-open-city-d9c63"
-          - elsif Date.parse('2012-8-14') < Date.today
-            = link_to "Aug 14th RSVP and details", "http://gathers.us/events/open-gov-hack-night-organized-by-open-city-b54cf"
-          - elsif Date.parse('2012-8-6') < Date.today
-            = link_to "Aug 7th RSVP and details", "http://gathers.us/events/open-gov-hack-night-organized-by-open-city-cfe48"
-        - rescue
-          = "No upcoming events" 
+        = link_to "RSVP on gathers.us", "http://gathers.us/events/"
   
   #press
     .content
