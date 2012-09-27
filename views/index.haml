@@ -17,11 +17,19 @@
 #page
   #about
     .content
-      %h1
-        = image_tag "logo.png", :alt => "Open City - Civic apps built with open data"
-      %h2 Civic apps built with open data
-      %p
-        Open City is a group of volunteers that create web apps with open data to improve transparency, efficiency, and decision-making for governments and our democracy.  
+      #about-primary
+        %h1
+          = image_tag "logo.png", :alt => "Open City - Civic apps built with open data"
+        %h2 Civic apps built with open data
+        %p
+          Open City is a group of volunteers that create web apps with open data to improve transparency, efficiency, and decision-making for governments and our democracy.  
+
+      #about-secondary
+        %p
+          %a{:href => "https://github.com/open-city"}
+            %img{:alt => "Open City on Github", :src => "/images/github.png", :title => "Open City on Github"}
+          %a{:href => "https://twitter.com/opencityapps"}
+            %img{:alt => "Open City on Twitter", :src => "/images/twitter.png", :title => "Open City on Twitter"}
   
   #projects
     .content
