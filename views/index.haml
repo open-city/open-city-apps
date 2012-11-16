@@ -158,29 +158,29 @@
       
       %dl#tools
         %dt
-          Python Dedupe Library 
+          = link_to "Searchable Map Template", "http://derekeder.com/searchable_map_template/"
+        %dd
+          = link_to "GitHub repository", "https://github.com/derekeder/FusionTable-Map-Template", :class => "icon-github"
+        %dd
+          Put your data on a searchable, filterable map. This is a free, open source tool and template powered by Google Fusion Tables.
+        %dd
+          %strong Team: 
+          Derek Eder
+
+        %dt
+          = link_to "Python Dedupe Library", "https://github.com/open-city/dedupe"
           %span.mute
             (in development)
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/dedupe", :class => "icon-github"
           |
-          = link_to "Knight News Challenge submission", "http://newschallenge.tumblr.com/post/25546531302/python-library-to-make-sense-of-campaign-contribution"
+          = link_to "Overview", "https://github.com/open-city/dedupe/wiki"
           |
           = link_to "Big Data De-duping presentation", "http://pyvideo.org/video/973/big-data-de-duping"
         %dd A free python library for accurate and scaleable deduplication and entity-resolution. We are building this tool to accurately find all campaign contributions made by a single person or organization, but it can be used to de-duplicate any large dataset.
-        
-        %dt
-          Fusion Library
         %dd
-          = link_to "GitHub repository", "https://github.com/open-city/fusion_library", :class => "icon-github"
-        %dd A javascript library that makes it easy to integrate <a href='https://developers.google.com/maps/documentation/javascript/'>Google Maps</a> and <a href='http://www.google.com/fusiontables'>Fusion Tables</a>.
-        
-        %dt
-          Site Template
-        %dd
-          = link_to "GitHub repository", "https://github.com/open-city/site-template", :class => "icon-github"
-        %dd 
-          Simple site template using Ruby, <a href='www.sinatrarb.com'>Sinatra</a> and Haml with tie-ins to <a href='www.heroku.com'>Heroku</a> and Google Analytics. Used to build the Open City website!
+          %strong Team: 
+          Forest Gregg and Derek Eder
   
   #events
     .content
@@ -203,16 +203,19 @@
         Chicago, IL 60654
         %br
         = link_to "RSVP on Eventbrite »", "http://opengovhacknight.eventbrite.com"
-
-      %p
-        %strong Note:
-        There will be no hack night on Tuesday Nov 6th due to the election. The next one will be on Nov 13th. See you then!
   
   #press
     .content
       %h2 Press
       
       %dl.press
+
+        %dt
+          = link_to "Hacking Chicago", "http://www.huffingtonpost.com/derek-eder/chicago-public-schools-locator-map_b_2119284.html"
+        %dd
+          By Derek Eder on 
+          %cite Huffington Post
+          | Nov 12, 2012
 
         %dt
           = link_to "Center for Neighborhood Technology Urban Sustainability Hackathon", "http://www.smartchicagocollaborative.org/center-for-neighborhood-technology-urban-sustainability-hackathon/"
