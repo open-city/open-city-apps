@@ -37,7 +37,9 @@
       %p 
         All of our projects are 
         = link_to "open source", "https://github.com/open-city"
-        and free to use under the MIT license. 
+        and free to use under the 
+        = succeed '.' do
+          %a{:href => 'http://en.wikipedia.org/wiki/MIT_License'} MIT license 
         
         Want to bring one of these apps to your city, municipality or organization? Get in touch at 
         = succeed '.' do
