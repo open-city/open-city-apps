@@ -25,6 +25,7 @@ module OpenCity
     helpers OpenCity::HtmlHelpers
 
     get "/" do
+      cache_control :public, max_age: 3600  # 1 hour
       haml :index
     end
   end
