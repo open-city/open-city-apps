@@ -47,6 +47,20 @@
 
       %dl#sites
         %dt
+          = link_to "#{image_tag("projects/second-city-zoning.jpg")} 2nd City Zoning", "http://secondcityzoning.org"
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/second-city-zoning", :class => "icon-github"
+        %dd 
+          2nd City Zoning is an interactive map that lets you find out how your building is zoned,
+          learn where to locate your business and explore zoning patterns throughout the city.
+          To make Chicago’s zoning code digestible by humans, we took inspiration from one of our favorite games: 
+          = succeed '.' do
+            %a{:href => 'http://en.wikipedia.org/wiki/SimCity_2000'} Sim City 2000
+        %dd
+          %strong Team: 
+          Derek Eder and Juan-Pablo Velez
+
+        %dt
           = link_to "#{image_tag("projects/edifice.jpg")} Edifice", "http://edifice.opencityapps.org"
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/edifice-maps", :class => "icon-github"
@@ -215,6 +229,13 @@
       %h2 Press
       
       %dl.press
+
+        %dt
+          = link_to "Open Government Hack Night", "https://timeoutchicago.com/things-to-do/this-week-in-chicago/15996451/open-government-hack-night"
+        %dd
+          By Jake Malooley on 
+          %cite TimeOut Chicago
+          | Jan 17, 2012
 
         %dt
           = link_to "Updated ClearStreets, Alternative to Plow Tracker, Brings New Features and Mobile Friendly Design", "http://gridchicago.com/2012/updated-clearstreets-alternative-to-plow-tracker-brings-new-features-and-mobile-friendly-design/"
