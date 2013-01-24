@@ -6,13 +6,12 @@
       %li
         = link_to "Projects", "#projects"
       %li
-        = link_to "Tools", "#tools"
-      %li
-        = link_to "Events", "#events"
-      %li
-        = link_to "Press", "#press"
+        = link_to "Open Gov Hack Night", "#open-gov-hack-night"
       %li
         = link_to "People", "#people"
+      %li
+        = link_to "Press", "#press"
+      
 
 #page
   #about
@@ -167,48 +166,16 @@
         %dd
           %strong Team: 
           Nick Rougeux
-    
-  #tools
-    .content
-      %h2 Tools
-      
-      %dl#tools
-        %dt
-          = link_to "Searchable Map Template", "http://derekeder.com/searchable_map_template/"
-        %dd
-          = link_to "GitHub repository", "https://github.com/derekeder/FusionTable-Map-Template", :class => "icon-github"
-        %dd
-          Put your data on a searchable, filterable map. This is a free, open source tool and template powered by Google Fusion Tables.
-        %dd
-          %strong Team: 
-          Derek Eder
 
-        %dt
-          = link_to "Python Dedupe Library", "https://github.com/open-city/dedupe"
-          %span.mute
-            (in development)
-        %dd
-          = link_to "GitHub repository", "https://github.com/open-city/dedupe", :class => "icon-github"
-          |
-          = link_to "Overview", "https://github.com/open-city/dedupe/wiki"
-          |
-          = link_to "Big Data De-duping presentation", "http://pyvideo.org/video/973/big-data-de-duping"
-        %dd A free python library for accurate and scaleable deduplication and entity-resolution. We are building this tool to accurately find all campaign contributions made by a single person or organization, but it can be used to de-duplicate any large dataset.
-        %dd
-          %strong Team: 
-          Forest Gregg and Derek Eder
-  
-  #events
+  #open-gov-hack-night
     .content
-      %h2 Events
-      
-      %h3 
-        = link_to "Open Government Hack Night", "http://opengovhacknight.eventbrite.com"
+      %h2 
+        = link_to "Open Gov Hack Night", "http://opengovhacknight.eventbrite.com"
         
       %p
         Every Tuesday from 6:00pm - 10:00pm
       %p
-        Open City hosts a weekly opengov hack night every week. The goal is to have a recurring time and place to work, collaborate and learn with others on projects using open data. Come join a the group of passionate open government members!
+        Come join a group of passionate folks working at the intersection of open government, cities, and technology. This will be an evening of civic tech hacking, collaboration, learning and networking.
         
       %p
         %strong
@@ -220,9 +187,53 @@
         %br
         = link_to "RSVP on Eventbrite »", "http://opengovhacknight.eventbrite.com"
 
-      %p
-        %strong Note:
-        There will be no hack night on Dec 25th or Jan 1st due to the holidays. We'll pick it back up on Jan 8th 2013!
+  #people
+    .content
+      %h2 People
+      %h3 Founders
+      %ul.people
+        %li
+          %h3
+            = link_to "#{image_tag("people/paul-baker.jpg")} <br /> Paul Baker", "http://twitter.com/paulbaker"
+          %p Paul, a former typographer, has been designing websites since 1995. He has presented extensively on topics such as design research, usability, and social networking. He is a jazz musician and gigs frequently around Chicago.
+        %li
+          %h3
+            = link_to "#{image_tag("people/derek-eder.jpg")} <br /> Derek Eder", "http://www.derekeder.com"
+          %p Derek is a Chicago web developer interested in open government, transit, maps, web design, and usability. He is an event organizer for the OpenGov Chicago Meetup group.
+        %li
+          %h3
+            = link_to "#{image_tag("people/chad-w-pry.jpg")} <br /> Chad Pry", "http://about.me/pry"
+          %p Chad is experienced in mentoring, conversation, programming, open data, and the love of food.
+        %li
+          %h3
+            = link_to "#{image_tag("people/nick-rougeux.jpg")} <br /> Nick Rougeux", "http://twitter.com/rougeux"
+          %p Nick's a designer who's passionate about finding new ways to explore data but knows just enough from his programming days to still be dangerous.
+      
+      .clear
+      %h3 
+        Collaborators
+      %ul.people
+        %li
+          %h3
+            = link_to "#{image_tag("people/jim-breen.jpg")} <br /> Jim Breen", "https://twitter.com/jimbreen"
+        %li
+          %h3
+            = link_to "#{image_tag("people/ryan-briones.jpg")} <br /> Ryan Briones", "http://ryanbriones.com/" 
+        %li
+          %h3
+            = link_to "#{image_tag("people/matt-gee.jpg")} <br /> Matt Gee", "http://www.linkedin.com/pub/matthew-gee/6/5b1/6b5"
+        %li
+          %h3
+            = link_to "#{image_tag("people/no-image.jpg")} <br /> Forest Gregg", "http://sociology.uchicago.edu/people/grad_students/ForestGregg.shtml"
+        %li
+          %h3
+            = link_to "#{image_tag("people/cory-mollet.jpg")} <br /> Cory Mollet", "https://twitter.com/CoryMollet" 
+        %li
+          %h3
+            = link_to "#{image_tag("people/daniel-morton.jpg")} <br /> Daniel Morton", "www.linkedin.com/pub/daniel-morton/24/29/898"
+        %li
+          %h3
+            = link_to "#{image_tag("people/juan-pablo-velez.jpg")} <br /> Juan-Pablo Velez", "http://jpvelez.contently.com/" 
   
   #press
     .content
@@ -231,11 +242,18 @@
       %dl.press
 
         %dt
+          = link_to "Second City 2000", "http://chicagotonight.wttw.com/2013/01/23/second-city-2000"
+        %dd
+          By Michael Lipkin on 
+          %cite Chicago Tonight (WTTW)
+          | Jan 23, 2013
+
+        %dt
           = link_to "Open Government Hack Night", "https://timeoutchicago.com/things-to-do/this-week-in-chicago/15996451/open-government-hack-night"
         %dd
           By Jake Malooley on 
           %cite TimeOut Chicago
-          | Jan 17, 2012
+          | Jan 17, 2013
 
         %dt
           = link_to "Updated ClearStreets, Alternative to Plow Tracker, Brings New Features and Mobile Friendly Design", "http://gridchicago.com/2012/updated-clearstreets-alternative-to-plow-tracker-brings-new-features-and-mobile-friendly-design/"
@@ -421,54 +439,6 @@
         %dt
           = link_to "Mayor Emanuel Announces New Lobbyist Data that Provides Clear Connection From Employers to Lobbyists to City Hall", "http://www.cityofchicago.org/city/en/depts/mayor/press_room/press_releases/2011/august_2011/mayor_emanuel_announcesnewlobbyistdatathatprovidesclearconnectio.html"
         %dd By Mayor's Press office, City of Chicago | August 30th 2011
-  
-  #people
-    .content
-      %h2 People
-      %h3 Founders
-      %ul.people
-        %li
-          %h3
-            = link_to "#{image_tag("people/paul-baker.jpg")} <br /> Paul Baker", "http://twitter.com/paulbaker"
-          %p Paul, a former typographer, has been designing websites since 1995. He has presented extensively on topics such as design research, usability, and social networking. He is a jazz musician and gigs frequently around Chicago.
-        %li
-          %h3
-            = link_to "#{image_tag("people/derek-eder.jpg")} <br /> Derek Eder", "http://www.derekeder.com"
-          %p Derek is a Chicago web developer interested in open government, transit, maps, web design, and usability. He is an event organizer for the OpenGov Chicago Meetup group.
-        %li
-          %h3
-            = link_to "#{image_tag("people/chad-w-pry.jpg")} <br /> Chad Pry", "http://about.me/pry"
-          %p Chad is experienced in mentoring, conversation, programming, open data, and the love of food.
-        %li
-          %h3
-            = link_to "#{image_tag("people/nick-rougeux.jpg")} <br /> Nick Rougeux", "http://twitter.com/rougeux"
-          %p Nick's a designer who's passionate about finding new ways to explore data but knows just enough from his programming days to still be dangerous.
-      
-      .clear
-      %h3 
-        Collaborators
-      %ul.people
-        %li
-          %h3
-            = link_to "#{image_tag("people/jim-breen.jpg")} <br /> Jim Breen", "https://twitter.com/jimbreen"
-        %li
-          %h3
-            = link_to "#{image_tag("people/ryan-briones.jpg")} <br /> Ryan Briones", "http://ryanbriones.com/" 
-        %li
-          %h3
-            = link_to "#{image_tag("people/matt-gee.jpg")} <br /> Matt Gee", "http://www.linkedin.com/pub/matthew-gee/6/5b1/6b5"
-        %li
-          %h3
-            = link_to "#{image_tag("people/no-image.jpg")} <br /> Forest Gregg", "http://sociology.uchicago.edu/people/grad_students/ForestGregg.shtml"
-        %li
-          %h3
-            = link_to "#{image_tag("people/cory-mollet.jpg")} <br /> Cory Mollet", "https://twitter.com/CoryMollet" 
-        %li
-          %h3
-            = link_to "#{image_tag("people/daniel-morton.jpg")} <br /> Daniel Morton", "www.linkedin.com/pub/daniel-morton/24/29/898"
-        %li
-          %h3
-            = link_to "#{image_tag("people/juan-pablo-velez.jpg")} <br /> Juan-Pablo Velez", "http://jpvelez.contently.com/" 
   
   #footer
     .content
