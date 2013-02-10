@@ -31,7 +31,7 @@ module OpenCity
 
     # utility for flushing cache
     get "/flush_cache" do
-      if memcache_servers = ENV["MEMCACHE_SERVERS"]
+      unless ENV["MEMCACHE_SERVERS"].nil? or ENV["MEMCACHE_SERVERS"] == ''
         require 'dalli'
         dc = Dalli::Client.new
         dc.flush
