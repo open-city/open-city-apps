@@ -28,5 +28,15 @@ module OpenCity
       cache_control :public, max_age: 3600  # 1 hour
       haml :index
     end
+
+    # utility for flushing cache
+    get "/flush_cache" do
+      if memcache_servers = ENV["MEMCACHE_SERVERS"]
+        require 'dalli'
+        dc = Dalli::Client.new
+        dc.flush
+      end
+      redirect "/"
+    end
   end
 end
