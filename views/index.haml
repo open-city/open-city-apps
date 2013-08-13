@@ -4,9 +4,9 @@
       %li
         = link_to "About", "#about"
       %li
-        = link_to "Projects", "#projects"
+        = link_to "Hack Night", "#open-gov-hack-night"
       %li
-        = link_to "Open Gov Hack Night", "#open-gov-hack-night"
+        = link_to "Projects", "#projects"
       %li
         = link_to "People", "#people"
       %li
@@ -19,17 +19,49 @@
       #about-primary
         %h1
           = image_tag "logo.png", :alt => "Open City - Civic apps built with open data"
-        %h2 Civic apps built with open data
-        %p
-          Open City is a group of volunteers that create apps with open data to improve transparency and citizen understanding of our government.   
 
-      #about-secondary
-        %p
-          %a{:href => "https://github.com/open-city"}
-            %img{:alt => "Open City on Github", :src => "/images/github.png", :title => "Open City on Github"}
-          %a{:href => "https://twitter.com/opencityapps"}
-            %img{:alt => "Open City on Twitter", :src => "/images/twitter.png", :title => "Open City on Twitter"}
+  #about-info
+    .content        
+      %h2 Civic apps built with open data
+      %p
+        Open City is a group of volunteers that create apps with <a href='http://en.wikipedia.org/wiki/Open_data'>open data</a> to improve transparency and citizen understanding of our government.
+        We host the <a href='http://opengovhacknight.eventbrite.com/'>Open Gov Hack Night</a> in Chicago, a weekly event for developers, designers, data scientists, policy experts and curious citizens to learn about and work with open data released by governments.
+
+      %p
+        Follow our work on 
+        %a{:href => "https://github.com/open-city"} 
+          %img{:alt => "Open City on Github", :src => "/images/github.png", :title => "Open City on Github"}
+          Github
+        and
+        %a{:href => "https://twitter.com/opencityapps"} 
+          %img{:alt => "Open City on Twitter", :src => "/images/twitter.png", :title => "Open City on Twitter"}
+          Twitter
+        or get in touch at 
+        = succeed '.' do
+          = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
   
+  #open-gov-hack-night
+    .content
+      %h2 
+        = link_to "Open Gov Hack Night", "http://opengovhacknight.eventbrite.com"
+        
+      %p
+        Come join a group of passionate folks working at the intersection of open government, cities, and technology. This will be an evening of civic tech hacking, collaboration, learning and networking.
+        <a href='http://opengovhacknight.eventbrite.com'>More info</a>.
+        
+      %p
+        Every Tuesday from 6:00pm - 10:00pm
+        %br
+        %strong
+          1871
+        %br
+        222 W. Merchandise Mart Plaza, 12th Floor 
+        %br
+        Chicago, IL 60654
+
+      %p
+        <a href='http://eepurl.com/z65hn'>Subscribe to our mailing list</a> for weekly updates.
+
   #projects
     .content
       %h2 Projects
@@ -38,11 +70,7 @@
         = link_to "open source", "https://github.com/open-city"
         and free to use under the 
         = succeed '.' do
-          %a{:href => 'http://en.wikipedia.org/wiki/MIT_License'} MIT license 
-        
-        Want to bring one of these apps to your city, municipality or organization? Get in touch at 
-        = succeed '.' do
-          = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
+          %a{:href => 'http://en.wikipedia.org/wiki/MIT_License'} MIT license
 
       %dl#sites
         %dt
@@ -186,26 +214,6 @@
         %dd
           %strong Team: 
           Nick Rougeux
-
-  #open-gov-hack-night
-    .content
-      %h2 
-        = link_to "Open Gov Hack Night", "http://opengovhacknight.eventbrite.com"
-        
-      %p
-        Every Tuesday from 6:00pm - 10:00pm
-      %p
-        Come join a group of passionate folks working at the intersection of open government, cities, and technology. This will be an evening of civic tech hacking, collaboration, learning and networking.
-        
-      %p
-        %strong
-          1871
-        %br
-        222 W. Merchandise Mart Plaza, 12th Floor 
-        %br
-        Chicago, IL 60654
-        %br
-        = link_to "RSVP on Eventbrite »", "http://opengovhacknight.eventbrite.com"
 
   #people
     .content
