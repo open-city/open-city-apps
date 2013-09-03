@@ -8,6 +8,7 @@ gem "sinatra-r18n"
 gem "haml"
 
 # cache
+gem "memcachier"
 gem "dalli"
 gem "rack-cache"
 
