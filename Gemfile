@@ -13,6 +13,5 @@ gem "dalli"
 gem "rack-cache"
 
 group :development do
-  gem "heroku"
   gem "unicorn"
 end
