@@ -20,26 +20,23 @@
         %h1
           = image_tag "logo.png", :alt => "Open City - Civic apps built with open data"
 
+      #about-secondary
+        %a{:href => "https://github.com/open-city"} 
+          %img{:alt => "Open City on Github", :src => "/images/github.png", :title => "Open City on Github"}
+        %a{:href => "https://twitter.com/opencityapps"} 
+          %img{:alt => "Open City on Twitter", :src => "/images/twitter.png", :title => "Open City on Twitter"}
+        %a{:href => "mailto:info@opencityapps.org"} 
+          %img{:alt => "Open City email", :src => "/images/gmail.png", :title => "Open City email"}
+
   #about-info
     .content        
       %h2 Civic apps built with open data
       %p
-        Open City is a group of volunteers that create apps with <a href='http://en.wikipedia.org/wiki/Open_data'>open data</a> to improve transparency and citizen understanding of our government.
+        %strong Open City
+        is a group that create apps with <a href='http://en.wikipedia.org/wiki/Open_data'>open data</a> to improve transparency and understanding of our government.
+      %p
         We host the <a href='http://opengovhacknight.org/'>Open Gov Hack Night</a> in Chicago, a weekly event for developers, designers, data scientists, policy experts and curious citizens to learn about and work with open data released by governments.
 
-      %p
-        Follow our work on 
-        %a{:href => "https://github.com/open-city"} 
-          %img{:alt => "Open City on Github", :src => "/images/github.png", :title => "Open City on Github"}
-          Github
-        and
-        %a{:href => "https://twitter.com/opencityapps"} 
-          %img{:alt => "Open City on Twitter", :src => "/images/twitter.png", :title => "Open City on Twitter"}
-          Twitter
-        or get in touch at 
-        = succeed '.' do
-          = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
-  
   #open-gov-hack-night
     .content
       %h2 
@@ -609,6 +606,12 @@
   
   #footer
     .content
-      Have a suggestion or feedback on one of our apps? Get in touch at
+      Follow our work on 
+      %a{:href => "https://github.com/open-city"} 
+        Github
+      and
+      %a{:href => "https://twitter.com/opencityapps"} 
+        Twitter
+      or get in touch at 
       = succeed '.' do
         = link_to "info@opencityapps.org", "mailto:info@opencityapps.org"
