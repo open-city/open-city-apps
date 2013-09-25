@@ -71,29 +71,37 @@
 
       %dl#sites
         %dt
-          = link_to "#{image_tag("projects/chicagocouncilmatic.jpg")} Chicago Councilmatic", "http://chicagocouncilmatic.org"
+          = link_to "#{image_tag("projects/opengovhacknight.jpg")} Open Gov Hack Night", "http://opengovhacknight.org"
+        %dd 
+          The official website for the Open Gov Hack Night. Find out about past <a href='http://opengovhacknight.org/events.html'>events</a>, civic <a href='http://opengovhacknight.org/projects.html'>projects</a> and the <a href='http://opengovhacknight.org/people.html'>people</a> that work on them.
         %dd
-          = link_to "GitHub repository", "https://github.com/open-city/councilmatic", :class => "icon-github"
+          = link_to "GitHub repository", "https://github.com/open-city/open-gov-hack-night", :class => "icon-github"
+        %dd
+          %strong Team: 
+          Derek Eder, Eric van Zanten and Juan-Pablo Velez
+
+        %dt
+          = link_to "#{image_tag("projects/chicagocouncilmatic.jpg")} Chicago Councilmatic", "http://chicagocouncilmatic.org"
         %dd 
           Are you curious about what legislation the <a href='http://www.cityofchicago.org/city/en/about/council.html'>Chicago City Council</a> has been passing? Search, browse, subscribe and comment on everything the City Council has done since Jan 1st 2010. 
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/councilmatic", :class => "icon-github"
         %dd
           %strong Team: 
           Derek Eder and Forest Gregg
 
         %dt
           = link_to "#{image_tag("projects/capsure.jpg")} CAPSure", "http://capsure.opencityapps.org"
-        %dd
-          = link_to "GitHub repository", "https://github.com/open-city/capsure", :class => "icon-github"
         %dd 
           Chicago Alternative Policing Strategy meetings, or <a href='https://portal.chicagopolice.org/portal/page/portal/ClearPath/Get%20Involved/How%20CAPS%20works/Beat%20Meetings'>CAPS meetings</a>, are recurring events with the Chicago Police Department and Chicago residents that encourage community members and police to work together to reduce crime. CAPSure lets you find out when and where your next meeting is, in an effort to increase the level of citizen participation.
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/capsure", :class => "icon-github"
         %dd
           %strong Team: 
           Derek Eder, Nick Doiron, Forest Gregg and Aya O'Connor
 
         %dt
           = link_to "#{image_tag("projects/second-city-zoning.jpg")} 2nd City Zoning", "http://secondcityzoning.org"
-        %dd
-          = link_to "GitHub repository", "https://github.com/open-city/second-city-zoning", :class => "icon-github"
         %dd 
           2nd City Zoning is an interactive map that lets you find out how your building is zoned,
           learn where to locate your business and explore zoning patterns throughout the city.
@@ -101,13 +109,13 @@
           = succeed '.' do
             %a{:href => 'http://en.wikipedia.org/wiki/SimCity_2000'} Sim City 2000
         %dd
+          = link_to "GitHub repository", "https://github.com/open-city/second-city-zoning", :class => "icon-github"
+        %dd
           %strong Team: 
           Derek Eder and Juan-Pablo Velez
 
         %dt
           = link_to "#{image_tag("projects/edifice.jpg")} Edifice", "http://edifice.opencityapps.org"
-        %dd
-          = link_to "GitHub repository", "https://github.com/open-city/edifice-maps", :class => "icon-github"
         %dd 
           Edifice is a series of maps that explore Chicago's built environment, from 
           = succeed ',' do
@@ -121,13 +129,13 @@
             %a{:href => 'https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu'}
             new construction
         %dd
+          = link_to "GitHub repository", "https://github.com/open-city/edifice-maps", :class => "icon-github"
+        %dd
           %strong Team: 
           Cory Mollet and Juan-Pablo Velez
 
         %dt
           = link_to "#{image_tag("projects/hows-business.jpg")} How's Business?", "http://howsbusinesschicago.org"
-        %dd
-          = link_to "GitHub repository", "https://github.com/open-city/hows-business", :class => "icon-github"
         %dd 
           How’s Business provides a dashboard of Chicago’s local economy. It uses open data from the 
           = succeed ',' do
@@ -138,31 +146,31 @@
           %a{:href => 'http://www.woodstockinst.org/'} Woodstock Institute
           to show how several economic indicators have been trending since 2005.
         %dd
+          = link_to "GitHub repository", "https://github.com/open-city/hows-business", :class => "icon-github"
+        %dd
           %strong Team: 
           Daniel Morton, Derek Eder, Forest Gregg and Matt Gee
 
         %dt
           = link_to "#{image_tag("projects/crime-in-chicago.png")} Crime in Chicago", "http://www.crimeinchicago.org"
+        %dd Crime in Chicago is a data visualization that lets you explore crime trends in Chicago's 50 wards. It was built using <a href='https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2'>open data about Chicago crimes</a> released by the <a href='http://www.cityofchicago.org/police'>Chicago Police Department</a>.
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/crime-in-chicago", :class => "icon-github"
-        %dd Crime in Chicago is a data visualization that lets you explore crime trends in Chicago's 50 wards. It was built using <a href='https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2'>open data about Chicago crimes</a> released by the <a href='http://www.cityofchicago.org/police'>Chicago Police Department</a>.
         %dd
           %strong Team: 
           Nick Rougeux, Chad Pry, Derek Eder, Paul Baker, Jim Breen and Juan-Pablo Velez
 
         %dt
           = link_to "#{image_tag("projects/cpstiers.png")} Chicago Public School Tiers", "http://cpstiers.opencityapps.org"
+        %dd In Chicago, a student's chance of getting into the city's top, selective schools depends on where he or she lives. Chicago Public Schools (CPS) places every part of the city into one of four socio-economic "tiers" and requires selective schools to reserve the same number of spots for the students from each tier. This tool helps you find what CPS tier your are in.
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/cps-tiers", :class => "icon-github"
-        %dd In Chicago, a student's chance of getting into the city's top, selective schools depends on where he or she lives. Chicago Public Schools (CPS) places every part of the city into one of four socio-economic "tiers" and requires selective schools to reserve the same number of spots for the students from each tier. This tool helps you find what CPS tier your are in.
         %dd
           %strong Team: 
           Forest Gregg, Derek Eder and Juan-Pablo Velez
         
         %dt
           = link_to "#{image_tag("projects/clearstreets.png")} Clear Streets", "http://derekeder.com/clearstreets"
-        %dd
-          = link_to "GitHub repository", "https://github.com/open-city/clearstreets-web", :class => "icon-github"
         %dd 
           On January 3rd 2012, the City of Chicago launched 
           = link_to "Plow Tracker", "http://www.cityofchicago.org/content/city/en/depts/mayor/iframe/plow_tracker.html"
@@ -170,44 +178,46 @@
           = succeed '.' do
             = link_to "Fusion Tables Example Gallery", "https://sites.google.com/site/fusiontablestalks/stories#collaborate"
         %dd
+          = link_to "GitHub repository", "https://github.com/open-city/clearstreets-web", :class => "icon-github"
+        %dd
           %strong Team: 
           Forest Gregg, Derek Eder and Juan-Pablo Velez
         
         %dt
           = link_to "#{image_tag("projects/chicagolobbyists.png")} Chicago Lobbyists", "http://chicagolobbyists.org"
+        %dd ChicagoLobbyists.org is an open data, open government, and open source project intended to improve the transparency of interactions between the City of Chicago and lobbyists and their clients. 
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/chicago-lobbyists-web", :class => "icon-github"
           |
           = link_to "Chicago Lobbyists blog", "http://blog.chicagolobbyists.org"
-        %dd ChicagoLobbyists.org is an open data, open government, and open source project intended to improve the transparency of interactions between the City of Chicago and lobbyists and their clients. 
         %dd
           %strong Team: 
           Chad Pry, Ryan Briones, Nick Rougeux, Paul Baker and Derek Eder
         
         %dt
           = link_to "#{image_tag("projects/vacantbuildingfinder.png")} Vacant and Abandoned Building Finder", "http://chicagobuildings.org"
+        %dd ChicagoBuildings.org is a tool for finding vacant and abandoned buildings in Chicago. The data comes from reports made to the City of Chicago's 311 reporting service and is updated regularly. 
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/vacant-building-finder", :class => "icon-github"
-        %dd ChicagoBuildings.org is a tool for finding vacant and abandoned buildings in Chicago. The data comes from reports made to the City of Chicago's 311 reporting service and is updated regularly. 
         %dd
           %strong Team: 
           Derek Eder
         
         %dt
           = link_to "#{image_tag("projects/lookatcook.png")} Look at Cook", "http://lookatcook.org"
-        %dd
-          = link_to "GitHub repository", "https://github.com/open-city/look-at-cook", :class => "icon-github"
         %dd 
           Look at Cook is an easy-to-understand budget visualization for Cook County IL, which tracks government budgets and expenditures from 1993-2011 broken down by year and department. Developed in collaboration with Cook County Commissioner John Fritchey. Featured in Google's <a href='https://sites.google.com/site/fusiontablestalks/stories#API'>Fusion Tables Example Gallery</a> and <a href='http://s3.amazonaws.com/lookatwhitewater/index.html'>redeployed</a> by the City of Whitewater, WI.
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/look-at-cook", :class => "icon-github"
         %dd
           %strong Team: 
           Derek Eder and Nick Rougeux
         
         %dt
           = link_to "#{image_tag("projects/metra.png")} Metra Schedules", "http://c82.net/metra"
+        %dd Created to visualize Metra's proposed 2012 service cuts due to high operating costs and shows how much of an impact the changes would have on riders' schedules. How the final result came about was a mixture of curiosity and fun with a pinch of obsession.
         %dd
           = link_to "GitHub repository", "https://github.com/open-city/metra-service-changes", :class => "icon-github"
-        %dd Created to visualize Metra's proposed 2012 service cuts due to high operating costs and shows how much of an impact the changes would have on riders' schedules. How the final result came about was a mixture of curiosity and fun with a pinch of obsession.
         %dd
           %strong Team: 
           Nick Rougeux
@@ -265,7 +275,10 @@
             = link_to "#{image_tag("people/cory-mollet.jpg")} <br /> Cory Mollet", "https://twitter.com/CoryMollet" 
         %li
           %h3
-            = link_to "#{image_tag("people/daniel-morton.jpg")} <br /> Daniel Morton", "www.linkedin.com/pub/daniel-morton/24/29/898"
+            = link_to "#{image_tag("people/daniel-morton.jpg")} <br /> Daniel Morton", "http://www.linkedin.com/pub/daniel-morton/24/29/898"
+        %li
+          %h3
+            = link_to "#{image_tag("people/eric-van-zanten.jpg")} <br /> Eric van Zanten", "http://www.static-eric.com/"
         
   
   #press

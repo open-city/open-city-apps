@@ -98,7 +98,7 @@ strong { font-weight: bold; }
 }
 
 /* Sites */
-#sites dd, #sites dt { padding-left: 308px; }
+#sites dd, #sites dt { padding: 0 0 8px 308px; }
 #sites img { border: 1px solid #ddd; float: left; margin: 3px 0 25px -308px; width: 288px; }
 #sites dt { clear: both; font-size: 25px; font-weight: 700; padding-top: 25px; }
 #sites dt:first-child { padding-top: 0; }
