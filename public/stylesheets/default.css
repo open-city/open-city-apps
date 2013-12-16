@@ -45,6 +45,14 @@ strong { font-weight: bold; }
 /* About */
 #about .content { background: none; box-shadow: none; margin-bottom: 0; padding-right: 0; width: 955px; }
 
+/* Columns */
+.c2l, .c2r { width: 48%; }
+.c2l, .c3l, .c3m { float: left; }
+.c2r, .c3r { float: right; }
+.c2r ul { margin-top: 0 }
+.c3l { margin-right: 3%; }
+.c3l, .c3m, .c3r { width: 31%; }
+
 /* Icons */
 [class *= "icon"] { background-repeat: no-repeat; background-position: 0 50%; line-height: 1; margin-right: 0.25em; padding: 3px 0 3px 20px; }
 .icon-github { background-image: url(/images/git.png); }
