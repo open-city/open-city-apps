@@ -37,7 +37,10 @@ strong { font-weight: bold; }
 #about { padding-top: 75px; }
 #about-primary { float: left; width: 61.02%; }
 #about-secondary { float: right; width: 29.48%; }
-
+#about-secondary a {
+  color: #fff;
+  vertical-align: top;
+}
 
 /* Content
 ======================================================================*/

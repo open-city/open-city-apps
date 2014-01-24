@@ -23,17 +23,22 @@
       #about-secondary
         %a{:href => "https://github.com/open-city"} 
           %img{:alt => "Open City on Github", :src => "/images/github.png", :title => "Open City on Github"}
+          Fork our code on Github
+        %br
         %a{:href => "https://twitter.com/opencityapps"} 
           %img{:alt => "Open City on Twitter", :src => "/images/twitter.png", :title => "Open City on Twitter"}
+          Follow @opencityapps
+        %br
+        
         %a{:href => "mailto:info@opencityapps.org"} 
           %img{:alt => "Open City email", :src => "/images/gmail.png", :title => "Open City email"}
+          Email us
 
   #about-info
     .content        
       %h2 Civic apps built with open data
       %p
-        %strong Open City
-        is a group that create apps with <a href='http://en.wikipedia.org/wiki/Open_data'>open data</a> to improve transparency and understanding of our government.
+        We are a group that create <a href='#projects'>apps</a> with <a href='http://en.wikipedia.org/wiki/Open_data'>open data</a> to improve transparency and understanding of our government.
 
   #open-gov-hack-night
     .content
@@ -69,6 +74,16 @@
           %a{:href => 'http://en.wikipedia.org/wiki/MIT_License'} MIT license
 
       %dl#sites
+        %dt
+          = link_to "#{image_tag("projects/istheresewageinthechicagoriver.png")} Is there sewage in the Chicago River?", "http://istheresewageinthechicagoriver.com"
+        %dd 
+          Every so often when Chicago gets a lot of rain or there's a significant snowmelt, the Chicagoland water management agencies pump excess wastewater into the lake and river in order to prevent flooding. This site notifies Chicagoans when this happens.
+        %dd
+          = link_to "GitHub repository", "https://github.com/open-city/chicago-river-sewage", :class => "icon-github"
+        %dd
+          %strong Team: 
+          Derek Eder, Forest Gregg, Andrew Clarke, James Courtois and Eric van Zanten
+
         %dt
           = link_to "#{image_tag("projects/opengovhacknight.jpg")} Open Gov Hack Night", "http://opengovhacknight.org"
         %dd 
@@ -246,7 +261,10 @@
             = link_to "#{image_tag("people/paul-baker.jpg")} <br /> Paul Baker", "http://twitter.com/paulbaker" 
         %li
           %h3
-            = link_to "#{image_tag("https://2.gravatar.com/avatar/9cfc6c88a401a98e9b0bdaf3e39818e5?s=440")} <br /> Chad W Pry", "http://about.me/pry"
+            %a{:href => 'http://about.me/pry'}
+              %img{:src => 'https://2.gravatar.com/avatar/9cfc6c88a401a98e9b0bdaf3e39818e5?s=440', :alt => 'Chad W Pry', :width => '150'}
+              %br
+              Chad W Pry
         %li
           %h3
             = link_to "#{image_tag("people/nick-rougeux.jpg")} <br /> Nick Rougeux", "http://twitter.com/rougeux"
@@ -285,6 +303,13 @@
       %h2 Press
       
       %dl.press
+
+        %dt
+          %a{:href => "http://civic.io/2014/01/16/turning-government-web-content-into-apis/"} Turning Government Web Content Into APIs
+        %dd 
+          by Mark Headd on
+          %cite Civic Innovations
+          | Jan 16th, 2014
 
         %dt
           %a{:href => "http://www.cbc.ca/edmontonam/episodes/2013/12/18/keeping-track-of-snow-plowing/"} Keeping track of snow plowing
@@ -453,8 +478,6 @@
           | Dec 20, 2012
 
         %dt
-          %br
-          %br
           %br
           = link_to "ClearStreets: Another Great Project Benefitting from Space on the Smart Chicago EC2 Account", "http://www.smartchicagocollaborative.org/clearstreets-another-great-project-benefitting-from-space-on-the-smart-chicago-ec2-account/"
         %dd
