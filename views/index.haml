@@ -290,10 +290,16 @@
       %ul.people
         %li
           %h3
+            = link_to "#{image_tag("people/scott-beslow.png")} <br /> Scott Beslow", "https://twitter.com/sbeslow"
+        %li
+          %h3
             = link_to "#{image_tag("people/jim-breen.jpg")} <br /> Jim Breen", "https://twitter.com/jimbreen"
         %li
           %h3
             = link_to "#{image_tag("people/ryan-briones.jpg")} <br /> Ryan Briones", "http://ryanbriones.com/" 
+        %li
+          %h3
+            = link_to "#{image_tag("people/andrew-clarke.png")} <br /> Andrew Clarke", "https://plus.google.com/115963037631920969320/posts"
         %li
           %h3
             = link_to "#{image_tag("people/nick-doiron.jpg")} <br /> Nick Doiron", "http://mapmeld.com/" 
@@ -308,6 +314,9 @@
             = link_to "#{image_tag("people/daniel-morton.jpg")} <br /> Daniel Morton", "http://www.linkedin.com/pub/daniel-morton/24/29/898"
         %li
           %h3
+            = link_to "#{image_tag("people/aya-oconnor.png")} <br /> Aya O'Connor", "https://twitter.com/ayaoconnor"
+        %li
+          %h3
             = link_to "#{image_tag("people/eric-van-zanten.jpg")} <br /> Eric van Zanten", "http://www.static-eric.com/"
         %li
           %h3
@@ -319,6 +328,20 @@
       %h2 Press
       
       %dl.press
+
+        %dt
+          %a{:href => "http://chicagoist.com/2014/05/17/new_open_city_site_lets_you_know_wh.php"} New Open City Site Lets You Know When Sewage Is Being Dumped Into The Chicago River
+        %dd 
+          by Jon Graef on
+          %cite Chicagoist
+          | May 17th, 2014
+
+        %dt
+          %a{:href => "https://soundcloud.com/afternoonshiftwbez/chicago-river-sewage"} Chicago River Sewage (audio)
+        %dd 
+          Derek Eder interviewed by Niala Boodhoo
+          %cite WBEZ Afternoon Shift
+          | May 12th, 2014
 
         %dt
           %a{:href => "http://www.outsidetheloopradio.com/2014/02/13/otl-episode-383-the-future-of-indie-media-open-city-apps-the-hideout-harmonica-hoedown-preview/"} The future of Indie Media, Open City Apps, The Hideout Harmonica Hoedown preview
@@ -508,7 +531,6 @@
           | Dec 20, 2012
 
         %dt
-          %br
           = link_to "ClearStreets: Another Great Project Benefitting from Space on the Smart Chicago EC2 Account", "http://www.smartchicagocollaborative.org/clearstreets-another-great-project-benefitting-from-space-on-the-smart-chicago-ec2-account/"
         %dd
           By Daniel X. O'Neil on 
