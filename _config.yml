@@ -1,0 +1,6 @@
+port:  5000
+markdown: kramdown
+name: Open City
+url: http://opencityapps.org
+description: "We are a group that create apps with open data to improve transparency and understanding of our government."
+permalink: /:categories/:title
