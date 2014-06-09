@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang='en'>
+  <head>
+    <title>
+      Open City - Civic apps built with open data
+    </title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content='text/css' http-equiv='Content-Style-Type' />
+    <meta content='' name='google-site-verification' />
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/stylesheets/default.css"/>
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    
+    <script type='text/javascript'>
+      //<![CDATA[
+        $(function(){
+          $("#nav a").click(function() {
+            var elementClicked = $(this).attr("href");
+            var destination = $(elementClicked).offset().top;
+            $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-75}, 500 );
+            $("#nav a").removeClass("current");
+            $(this).addClass("current");
+          });
+        });
+      //]]>
+    </script>
+  </head>
+  <body>
+    <div id='nav'>
+    <div class='content'>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#open-gov-hack-night">Hack Night</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#people">People</a>
+        </li>
+        <li>
+          <a href="#press">Press</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id='page'>
+
+    {{content}}
+
+    <div id='footer'>
+      <div class='content'>
+        Follow our work on
+        <a href='https://github.com/open-city'>
+          Github
+        </a>
+        and
+        <a href='https://twitter.com/opencityapps'>
+          Twitter
+        </a>
+        or get in touch at
+        <a href="mailto:info@opencityapps.org">info@opencityapps.org</a>.
+      </div>
+    </div>
+  </div>
+    <script type="text/javascript" src="/javascripts/jquery.ba-hashchange.js"></script>
+    <script type="text/javascript" src="/javascripts/analytics_lib.js"></script>
+  </body>
+</html>

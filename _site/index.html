@@ -1,0 +1,920 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang='en'>
+  <head>
+    <title>
+      Open City - Civic apps built with open data
+    </title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content='text/css' http-equiv='Content-Style-Type' />
+    <meta content='' name='google-site-verification' />
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/stylesheets/default.css"/>
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    
+    <script type='text/javascript'>
+      //<![CDATA[
+        $(function(){
+          $("#nav a").click(function() {
+            var elementClicked = $(this).attr("href");
+            var destination = $(elementClicked).offset().top;
+            $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-75}, 500 );
+            $("#nav a").removeClass("current");
+            $(this).addClass("current");
+          });
+        });
+      //]]>
+    </script>
+  </head>
+  <body>
+    <div id='nav'>
+    <div class='content'>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#open-gov-hack-night">Hack Night</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#people">People</a>
+        </li>
+        <li>
+          <a href="#press">Press</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id='page'>
+
+    <div id='about'>
+  <div class='content'>
+    <div id='about-primary'>
+      <h1>
+        <img alt="logo.png" src="/images/logo.png"/>
+      </h1>
+    </div>
+    <div id='about-secondary'>
+      <a href='https://github.com/open-city'>
+        <img alt='Open City on Github' src='/images/github.png' title='Open City on Github' />
+        Fork our code on Github
+      </a>
+      <br />
+      <a href='https://twitter.com/opencityapps'>
+        <img alt='Open City on Twitter' src='/images/twitter.png' title='Open City on Twitter' />
+        Follow @opencityapps
+      </a>
+      <br />
+      <a href='mailto:info@opencityapps.org'>
+        <img alt='Open City email' src='/images/gmail.png' title='Open City email' />
+        Email us
+      </a>
+    </div>
+  </div>
+</div>
+<div id='about-info'>
+  <div class='content'>
+    <h2>Civic apps built with open data</h2>
+    <p>
+      We are a group that create <a href='#projects'>apps</a> with <a href='http://en.wikipedia.org/wiki/Open_data'>open data</a> to improve transparency and understanding of our government.
+    </p>
+  </div>
+</div>
+<div id='open-gov-hack-night'>
+  <div class='content'>
+    <h2>
+      <a href="http://opengovhacknight.org/">Open Gov Hack Night</a>
+    </h2>
+    <div class='c2l'>
+      <p>
+        We host the <a href='http://opengovhacknight.org/'>Open Gov Hack Night</a> in Chicago, a weekly event for developers, designers, data scientists, policy experts and curious citizens to learn about and work with open data released by governments.
+      </p>
+      <p>
+        Come join a group of passionate folks working at the intersection of open government, cities, and technology. This will be an evening of civic tech hacking, collaboration, learning and hanging.
+      </p>
+    </div>
+    <div class='c2r'>
+      <p>
+        <strong>Open Gov Hack Night</strong>
+        <br />
+        6:00pm every Tuesday
+        <br />
+        1871 (in the IMSA room)
+        <br />
+        <a href='https://maps.google.com/maps?q=222+W+Merchandise+Mart+Plz+Chicago'>222 W. Merchandise Mart Plaza, 12th Floor</a>
+      </p>
+      <p>
+        <a href='http://eepurl.com/z65hn'>Subscribe to our mailing list</a> for weekly updates.
+      </p>
+    </div>
+  </div>
+</div>
+<div id='projects'>
+  <div class='content'>
+    <h2>Projects</h2>
+    <p>
+      All of our projects are
+      <a href="https://github.com/open-city">open source</a>
+      and free to use under the
+      <a href='http://en.wikipedia.org/wiki/MIT_License'>MIT license</a>.
+    </p>
+    <dl id='sites'>
+      <dt>
+        <a href="http://vision.transitfuture.org"><img alt="projects/transitfuture.png" src="/images/projects/transitfuture.png"/> Transit Future</a>
+      </dt>
+      <dd>
+        An interactive map that explains the Transit Future, a campaign to get Cook County to build a dozen new rail lines by creating a dedicated local revenue stream.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/transit-future">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Edward Oser, Catalina Velez, Nick Doiron, Juan-Pablo Velez
+      </dd>
+      <dd>
+        <strong>Collabotors:</strong>
+        <a href='http://www.cartografika.net'>Cartografika</a>, <a href='http://cnt.org'>Center for Neighborhood Technology</a>
+      </dd>
+      <dt>
+        <a href="http://istheresewageinthechicagoriver.com"><img alt="projects/istheresewageinthechicagoriver.png" src="/images/projects/istheresewageinthechicagoriver.png"/> Is there sewage in the Chicago River?</a>
+      </dt>
+      <dd>
+        Every so often when Chicago gets a lot of rain or there's a significant snowmelt, the Chicagoland water management agencies pump excess wastewater into the lake and river in order to prevent flooding. This site notifies Chicagoans when this happens.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/chicago-river-sewage">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Derek Eder, Forest Gregg, Eric van Zanten, Scott Beslow and Andrew Clarke
+      </dd>
+      <dt>
+        <a href="http://opengovhacknight.org"><img alt="projects/opengovhacknight.jpg" src="/images/projects/opengovhacknight.jpg"/> Open Gov Hack Night</a>
+      </dt>
+      <dd>
+        The official website for the Open Gov Hack Night. Find out about past <a href='http://opengovhacknight.org/events.html'>events</a>, civic <a href='http://opengovhacknight.org/projects.html'>projects</a> and the <a href='http://opengovhacknight.org/people.html'>people</a> that work on them.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/open-gov-hack-night">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Derek Eder, Eric van Zanten and Juan-Pablo Velez
+      </dd>
+      <dt>
+        <a href="http://chicagocouncilmatic.org"><img alt="projects/chicagocouncilmatic.jpg" src="/images/projects/chicagocouncilmatic.jpg"/> Chicago Councilmatic</a>
+      </dt>
+      <dd>
+        Are you curious about what legislation the <a href='http://www.cityofchicago.org/city/en/about/council.html'>Chicago City Council</a> has been passing? Search, browse, subscribe and comment on everything the City Council has done since Jan 1st 2010.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/councilmatic">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Derek Eder and Forest Gregg
+      </dd>
+      <dt>
+        <a href="http://capsure.opencityapps.org"><img alt="projects/capsure.jpg" src="/images/projects/capsure.jpg"/> CAPSure</a>
+      </dt>
+      <dd>
+        Chicago Alternative Policing Strategy meetings, or <a href='https://portal.chicagopolice.org/portal/page/portal/ClearPath/Get%20Involved/How%20CAPS%20works/Beat%20Meetings'>CAPS meetings</a>, are recurring events with the Chicago Police Department and Chicago residents that encourage community members and police to work together to reduce crime. CAPSure lets you find out when and where your next meeting is, in an effort to increase the level of citizen participation.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/capsure">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Derek Eder, Nick Doiron, Forest Gregg and Aya O'Connor
+      </dd>
+      <dt>
+        <a href="http://secondcityzoning.org"><img alt="projects/second-city-zoning.jpg" src="/images/projects/second-city-zoning.jpg"/> 2nd City Zoning</a>
+      </dt>
+      <dd>
+        2nd City Zoning is an interactive map that lets you find out how your building is zoned,
+        learn where to locate your business and explore zoning patterns throughout the city.
+        To make Chicago’s zoning code digestible by humans, we took inspiration from one of our favorite games:
+        <a href='http://en.wikipedia.org/wiki/SimCity_2000'>Sim City 2000</a>.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/second-city-zoning">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Derek Eder and Juan-Pablo Velez
+      </dd>
+      <dt>
+        <a href="http://edifice.opencityapps.org"><img alt="projects/edifice.jpg" src="/images/projects/edifice.jpg"/> Edifice</a>
+      </dt>
+      <dd>
+        Edifice is a series of maps that explore Chicago's built environment, from
+        <a href='https://data.cityofchicago.org/Buildings/Building-Footprints/w2v3-isjw'>building footprints</a>,
+        to
+        <a href='https://data.cityofchicago.org/Buildings/Building-Violations/22u3-xenr'>violations</a>
+        <a href='https://data.cityofchicago.org/Buildings/Demolition-Permits-2012/zkgv-8cwu'>demolitions</a>,
+        and
+        <a href='https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu'></a>
+        new construction.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/edifice-maps">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Cory Mollet and Juan-Pablo Velez
+      </dd>
+      <dt>
+        <a href="http://howsbusinesschicago.org"><img alt="projects/hows-business.jpg" src="/images/projects/hows-business.jpg"/> How's Business?</a>
+      </dt>
+      <dd>
+        How’s Business provides a dashboard of Chicago’s local economy. It uses open data from the
+        <a href='http://data.cityofchicago.org'>City of Chicago</a>,
+        the
+        <a href='http://www.bls.gov/lau/'>Bureau of Labor Statistics</a>
+        and the
+        <a href='http://www.woodstockinst.org/'>Woodstock Institute</a>
+        to show how several economic indicators have been trending since 2005.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/hows-business">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Daniel Morton, Derek Eder, Forest Gregg and Matt Gee
+      </dd>
+      <dt>
+        <a href="http://www.crimeinchicago.org"><img alt="projects/crime-in-chicago.png" src="/images/projects/crime-in-chicago.png"/> Crime in Chicago</a>
+      </dt>
+      <dd>Crime in Chicago is a data visualization that lets you explore crime trends in Chicago's 50 wards. It was built using <a href='https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2'>open data about Chicago crimes</a> released by the <a href='http://www.cityofchicago.org/police'>Chicago Police Department</a>.</dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/crime-in-chicago">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Nick Rougeux, Chad W Pry, Derek Eder, Paul Baker, Jim Breen and Juan-Pablo Velez
+      </dd>
+      <dt>
+        <a href="http://cpstiers.opencityapps.org"><img alt="projects/cpstiers.png" src="/images/projects/cpstiers.png"/> Chicago Public School Tiers</a>
+      </dt>
+      <dd>In Chicago, a student's chance of getting into the city's top, selective schools depends on where he or she lives. Chicago Public Schools (CPS) places every part of the city into one of four socio-economic "tiers" and requires selective schools to reserve the same number of spots for the students from each tier. This tool helps you find what CPS tier your are in.</dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/cps-tiers">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Forest Gregg, Derek Eder and Juan-Pablo Velez
+      </dd>
+      <dt>
+        <a href="http://derekeder.com/clearstreets"><img alt="projects/clearstreets.png" src="/images/projects/clearstreets.png"/> Clear Streets</a>
+      </dt>
+      <dd>
+        On January 3rd 2012, the City of Chicago launched
+        <a href="http://www.cityofchicago.org/content/city/en/depts/mayor/iframe/plow_tracker.html">Plow Tracker</a>
+        , an app that tracks the city's snow plows in real time. This app uses the same data. By knowing where the plows are, we've figured out which streets have been plowed. Featured in Google's
+        <a href="https://sites.google.com/site/fusiontablestalks/stories#collaborate">Fusion Tables Example Gallery</a>.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/clearstreets-web">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Forest Gregg, Derek Eder and Juan-Pablo Velez
+      </dd>
+      <dt>
+        <a href="http://chicagolobbyists.org"><img alt="projects/chicagolobbyists.png" src="/images/projects/chicagolobbyists.png"/> Chicago Lobbyists</a>
+      </dt>
+      <dd>ChicagoLobbyists.org is an open data, open government, and open source project intended to improve the transparency of interactions between the City of Chicago and lobbyists and their clients.</dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/chicago-lobbyists-web">GitHub repository</a>
+        |
+        <a href="http://blog.chicagolobbyists.org">Chicago Lobbyists blog</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Chad W Pry, Ryan Briones, Nick Rougeux, Paul Baker and Derek Eder
+      </dd>
+      <dt>
+        <a href="http://chicagobuildings.org"><img alt="projects/vacantbuildingfinder.png" src="/images/projects/vacantbuildingfinder.png"/> Vacant and Abandoned Building Finder</a>
+      </dt>
+      <dd>ChicagoBuildings.org is a tool for finding vacant and abandoned buildings in Chicago. The data comes from reports made to the City of Chicago's 311 reporting service and is updated regularly.</dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/vacant-building-finder">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Derek Eder
+      </dd>
+      <dt>
+        <a href="http://lookatcook.org"><img alt="projects/lookatcook.png" src="/images/projects/lookatcook.png"/> Look at Cook</a>
+      </dt>
+      <dd>
+        Look at Cook is an easy-to-understand budget visualization for Cook County IL, which tracks government budgets and expenditures from 1993-2011 broken down by year and department. Developed in collaboration with Cook County Commissioner John Fritchey. Featured in Google's <a href='https://sites.google.com/site/fusiontablestalks/stories#API'>Fusion Tables Example Gallery</a> and <a href='http://s3.amazonaws.com/lookatwhitewater/index.html'>redeployed</a> by the City of Whitewater, WI.
+      </dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/look-at-cook">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Derek Eder and Nick Rougeux
+      </dd>
+      <dt>
+        <a href="http://c82.net/metra"><img alt="projects/metra.png" src="/images/projects/metra.png"/> Metra Schedules</a>
+      </dt>
+      <dd>Created to visualize Metra's proposed 2012 service cuts due to high operating costs and shows how much of an impact the changes would have on riders' schedules. How the final result came about was a mixture of curiosity and fun with a pinch of obsession.</dd>
+      <dd>
+        <a class="icon-github" href="https://github.com/open-city/metra-service-changes">GitHub repository</a>
+      </dd>
+      <dd>
+        <strong>Team:</strong>
+        Nick Rougeux
+      </dd>
+    </dl>
+  </div>
+</div>
+<div id='people'>
+  <div class='content'>
+    <h2>People</h2>
+    <h3>Leadership</h3>
+    <ul class='people'>
+      <li>
+        <h3>
+          <a href="http://www.derekeder.com"><img alt="people/derek-eder.jpg" src="/images/people/derek-eder.jpg"/> <br /> Derek Eder</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="http://jpvelez.contently.com/"><img alt="people/juan-pablo-velez.jpg" src="/images/people/juan-pablo-velez.jpg"/> <br /> Juan-Pablo Velez</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="http://sociology.uchicago.edu/people/grad_students/ForestGregg.shtml"><img alt="people/forest-gregg.jpg" src="/images/people/forest-gregg.jpg"/> <br /> Forest Gregg</a>
+        </h3>
+      </li>
+    </ul>
+    <div class='clear'></div>
+    <p>&nbsp;</p>
+    <h3>Co-founders</h3>
+    <ul class='people'>
+      <li>
+        <h3>
+          <a href="http://twitter.com/paulbaker"><img alt="people/paul-baker.jpg" src="/images/people/paul-baker.jpg"/> <br /> Paul Baker</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href='http://about.me/pry'>
+            <img alt='Chad W Pry' src='https://2.gravatar.com/avatar/9cfc6c88a401a98e9b0bdaf3e39818e5?s=440' width='150' />
+            <br />
+            Chad W Pry
+          </a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="http://twitter.com/rougeux"><img alt="people/nick-rougeux.jpg" src="/images/people/nick-rougeux.jpg"/> <br /> Nick Rougeux</a>
+        </h3>
+      </li>
+    </ul>
+    <div class='clear'></div>
+    <p>&nbsp;</p>
+    <h3>
+      Collaborators
+    </h3>
+    <ul class='people'>
+      <li>
+        <h3>
+          <a href="https://twitter.com/sbeslow"><img alt="people/scott-beslow.png" src="/images/people/scott-beslow.png"/> <br /> Scott Beslow</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="https://twitter.com/jimbreen"><img alt="people/jim-breen.jpg" src="/images/people/jim-breen.jpg"/> <br /> Jim Breen</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="http://ryanbriones.com/"><img alt="people/ryan-briones.jpg" src="/images/people/ryan-briones.jpg"/> <br /> Ryan Briones</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="https://plus.google.com/115963037631920969320/posts"><img alt="people/andrew-clarke.png" src="/images/people/andrew-clarke.png"/> <br /> Andrew Clarke</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="http://mapmeld.com/"><img alt="people/nick-doiron.jpg" src="/images/people/nick-doiron.jpg"/> <br /> Nick Doiron</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="http://www.linkedin.com/pub/matthew-gee/6/5b1/6b5"><img alt="people/matt-gee.jpg" src="/images/people/matt-gee.jpg"/> <br /> Matt Gee</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="https://twitter.com/CoryMollet"><img alt="people/cory-mollet.jpg" src="/images/people/cory-mollet.jpg"/> <br /> Cory Mollet</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="http://www.linkedin.com/pub/daniel-morton/24/29/898"><img alt="people/daniel-morton.jpg" src="/images/people/daniel-morton.jpg"/> <br /> Daniel Morton</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="https://twitter.com/ayaoconnor"><img alt="people/aya-oconnor.png" src="/images/people/aya-oconnor.png"/> <br /> Aya O'Connor</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="http://www.static-eric.com/"><img alt="people/eric-van-zanten.jpg" src="/images/people/eric-van-zanten.jpg"/> <br /> Eric van Zanten</a>
+        </h3>
+      </li>
+      <li>
+        <h3>
+          <a href="http://catalinavelez.co.uk"><img alt="people/catalina-velez.jpg" src="/images/people/catalina-velez.jpg"/> <br /> Catalina Velez</a>
+        </h3>
+      </li>
+    </ul>
+  </div>
+</div>
+<div id='press'>
+  <div class='content'>
+    <h2>Press</h2>
+    <dl class='press'>
+      <dt>
+        <a href='http://chicagoist.com/2014/05/17/new_open_city_site_lets_you_know_wh.php'>New Open City Site Lets You Know When Sewage Is Being Dumped Into The Chicago River</a>
+      </dt>
+      <dd>
+        by Jon Graef on
+        <cite>Chicagoist</cite>
+        | May 17th, 2014
+      </dd>
+      <dt>
+        <a href='https://soundcloud.com/afternoonshiftwbez/chicago-river-sewage'>Chicago River Sewage (audio)</a>
+      </dt>
+      <dd>
+        Derek Eder interviewed by Niala Boodhoo
+        <cite>WBEZ Afternoon Shift</cite>
+        | May 12th, 2014
+      </dd>
+      <dt>
+        <a href='http://www.outsidetheloopradio.com/2014/02/13/otl-episode-383-the-future-of-indie-media-open-city-apps-the-hideout-harmonica-hoedown-preview/'>The future of Indie Media, Open City Apps, The Hideout Harmonica Hoedown preview</a>
+        (audio)
+      </dt>
+      <dd>
+        <cite>Outside the Loop RADIO</cite>
+        | Mar 21th, 2014
+      </dd>
+      <dt>
+        <a href='http://civic.io/2014/01/16/turning-government-web-content-into-apis/'>Turning Government Web Content Into APIs</a>
+      </dt>
+      <dd>
+        by Mark Headd on
+        <cite>Civic Innovations</cite>
+        | Jan 16th, 2014
+      </dd>
+      <dt>
+        <a href='http://www.cbc.ca/edmontonam/episodes/2013/12/18/keeping-track-of-snow-plowing/'>Keeping track of snow plowing</a>
+      </dt>
+      <dd>
+        <cite>CBC Edmonton</cite>
+        | Dec 18th, 2013
+      </dd>
+      <dt>
+        <a href='http://googlemapsmania.blogspot.com/2013/12/the-chicago-snow-plow-map.html'>The Chicago Snow Plow Map</a>
+      </dt>
+      <dd>
+        <cite>Google Maps Mania</cite>
+        | Dec 15th, 2013
+      </dd>
+      <dt>
+        <a href='http://www.fastcoexist.com/3023269/watch-this-fascinating-animation-of-chicagos-egalitarian-snow-plows'>Watch This Fascinating Animation Of Chicago’s Egalitarian Snow Plows</a>
+      </dt>
+      <dd>
+        <cite>FastCompany</cite>
+        | Dec 12th, 2013
+      </dd>
+      <dt>
+        <a href="http://techplan.cityofchicago.org/initiatives-by-strategy/effective-government/initiative-14/">Chicago Tech Plan - Increase and improve City data</a>
+      </dt>
+      <dd>
+        City of Chicago
+        | Sep 17, 2013
+      </dd>
+      <dt>
+        <a href="http://www.myfoxchicago.com/story/23129229/hackers-use-their-skills-to-make-chicago-more-user-friendly">Hackers use their skills to make Chicago more 'user-friendly'</a>
+      </dt>
+      <dd>
+        By Craig Wall on
+        <cite>Fox News Chicago</cite>
+        | Aug 13, 2013
+      </dd>
+      <dt>
+        <a href="http://online.wsj.com/article/SB10001424127887324263404578613850076916028.html">Hackers Called Into Civic Duty</a>
+      </dt>
+      <dd>
+        By Ben Kesling on
+        <cite>The Wall Street Journal</cite>
+        | Aug 12, 2013
+      </dd>
+      <dt>
+        <a href="http://jeffsegal.wordpress.com/2013/08/06/open-gov-hack-night-pure-entrepreneurship-meeting-weekly/">Open Gov Hack Night. Pure Entrepreneurship, Meeting Weekly</a>
+      </dt>
+      <dd>
+        <cite>Jeff Segal</cite>
+        | Aug 8, 2013
+      </dd>
+      <dt>
+        <a href="http://www.outsidetheloopradio.com/2013/06/13/otl-episode-348-visiting-the-salsa-truck-and-garage-the-real-six-corners-chicago-councilmatic/">The Impact of Opening Up Zoning Data</a>
+        (audio)
+      </dt>
+      <dd>
+        <cite>Outside the Loop RADIO</cite>
+        | Jun 13, 2013
+      </dd>
+      <dt>
+        <a href="http://sunlightfoundation.com/blog/2013/06/05/the-impact-of-opening-up-zoning-data/">The Impact of Opening Up Zoning Data</a>
+      </dt>
+      <dd>
+        <cite>Sunlight Foundation Blog</cite>
+        | Jun 5, 2013
+      </dd>
+      <dt>
+        <a href="http://chicagoist.com/2013/06/05/keep_tabs_on_chicago_legislation_al.php">Councilmatic Allows Chicagoans To Watch The Watchmen</a>
+      </dt>
+      <dd>
+        <cite>Chicagoist</cite>
+        | Jun 5, 2013
+      </dd>
+      <dt>
+        <a href="http://gapersblock.com/mechanics/2013/06/04/keep-tabs-on-city-council-and-your-alderman-with-councilmatic/">Keep Tabs on City Council and Your Alderman with Councilmatic</a>
+      </dt>
+      <dd>
+        <cite>Gapers Block</cite>
+        | Jun 4, 2013
+      </dd>
+      <dt>
+        <a href="http://digital.cityofchicago.org/index.php/hacking-safer-communities-and-community-policing-with-google/">Hacking Community Policing with Google</a>
+      </dt>
+      <dd>
+        <cite>Chicago Digital</cite>
+        | May 15, 2013
+      </dd>
+      <dt>
+        <a href="http://news.medill.northwestern.edu/chicago/news.aspx?id=220397">Chicago civic hackers: Saving the world takes more than open public data</a>
+      </dt>
+      <dd>
+        By Julie Davis on
+        <cite>Medill Reports - Chicago</cite>
+        | Apr 23, 2013
+      </dd>
+      <dt>
+        <a href="http://www.wbez.org/news/%E2%80%98hoodies%E2%80%99-%E2%80%98suits%E2%80%99-and-others-behind-chicago-government-20-106458">The 'hoodies', the 'suits' and others behind Chicago Government 2.0</a>
+      </dt>
+      <dd>
+        By Elliott Ramos on
+        <cite>WBEZ</cite>
+        | Apr 3, 2013
+      </dd>
+      <dt>
+        <a href="http://chicagopolicyreview.org/2013/04/01/policy-radio-special-edition-derek-eder-juan-pablo-velez-and-opengov-hackers-on-open-data-and-civic-minded-applications/">Derek Eder, Juan Pablo Velez, and OpenGov Hackers on Open Data and Civic-Minded Applications</a>
+      </dt>
+      <dd>
+        By Julie Cooper on
+        <cite>Chicago Policy Review</cite>
+        | Apr 1, 2013
+      </dd>
+      <dt>
+        <a href="http://wbezdata.tumblr.com/post/46446630030/new-data-set-alert-9-million-new-rows-worth-of-traffic">New data set alert: 9 million new rows worth of traffic data released by Chicago</a>
+      </dt>
+      <dd>
+        By Elliott Ramos on
+        <cite>WBEZ's Day x Datum</cite>
+        | Mar 27, 2013
+      </dd>
+      <dt>
+        <a href="http://www.theatlanticcities.com/neighborhoods/2013/03/mapping-bones-city/5101/">Mapping the Bones of a City</a>
+      </dt>
+      <dd>
+        By Emily Badger on
+        <cite>Atlantic Cities</cite>
+        | Mar 26, 2013
+      </dd>
+      <dt>
+        <a href="http://www.theatlanticcities.com/politics/2013/02/simcity-reference-day-chicago-zoning-map/4685/">SimCity Reference of the Day: Chicago Zoning Map</a>
+      </dt>
+      <dd>
+        By Henry Grabar on
+        <cite>Atlantic Cities</cite>
+        | Feb 12, 2013
+      </dd>
+      <dt>
+        <a href="http://www.reddit.com/r/SimCity/comments/186k38/map_of_chicago_with_simcity_zoning/">Map of Chicago with SimCity zoning</a>
+      </dt>
+      <dd>
+        By awinsalot on
+        <cite>Reddit /r/SimCity</cite>
+        | Feb 9, 2013
+      </dd>
+      <dt>
+        <a href="http://wbezdata.tumblr.com/post/42592720990/app-by-opengov-group-simplifies-chicagos-complex">App by OpenGov group simplifies Chicago’s complex zoning — Sim City style</a>
+      </dt>
+      <dd>
+        By Elliott Ramos on
+        <cite>Day x Datum on WBEZ</cite>
+        | Feb 8, 2013
+      </dd>
+      <dt>
+        <a href="http://nextcity.org/daily/entry/sim-city-meets-the-second-city">Sim City for the Second City</a>
+      </dt>
+      <dd>
+        By Juan-Pablo Velez on
+        <cite>Next City</cite>
+        | Feb 7, 2013
+      </dd>
+      <dt>
+        <a href="http://news.medill.northwestern.edu/chicago/news.aspx?id=214542">App lifts veil on government policy for Chicagoans</a>
+      </dt>
+      <dd>
+        By Conner Forrest on
+        <cite>Medill Reports - Chicago</cite>
+        | Jan 24, 2013
+      </dd>
+      <dt>
+        <a href="http://news.medill.northwestern.edu/chicago/news.aspx?id=214509">Civic hackers: 21st century community organizers?</a>
+      </dt>
+      <dd>
+        By Laurel White on
+        <cite>Medill Reports - Chicago</cite>
+        | Jan 24, 2013
+      </dd>
+      <dt>
+        <a href="http://chicagotonight.wttw.com/2013/01/23/second-city-2000">Second City 2000</a>
+      </dt>
+      <dd>
+        By Michael Lipkin on
+        <cite>Chicago Tonight (WTTW)</cite>
+        | Jan 23, 2013
+      </dd>
+      <dt>
+        <a href="https://timeoutchicago.com/things-to-do/this-week-in-chicago/15996451/open-government-hack-night">Open Government Hack Night</a>
+      </dt>
+      <dd>
+        By Jake Malooley on
+        <cite>TimeOut Chicago</cite>
+        | Jan 17, 2013
+      </dd>
+      <dt>
+        <a href="http://gridchicago.com/2012/updated-clearstreets-alternative-to-plow-tracker-brings-new-features-and-mobile-friendly-design/">Updated ClearStreets, Alternative to Plow Tracker, Brings New Features and Mobile Friendly Design</a>
+      </dt>
+      <dd>
+        By Steven Vance on
+        <cite>GridChicago</cite>
+        | Dec 20, 2012
+      </dd>
+      <dt>
+        <a href="http://www.smartchicagocollaborative.org/clearstreets-another-great-project-benefitting-from-space-on-the-smart-chicago-ec2-account/">ClearStreets: Another Great Project Benefitting from Space on the Smart Chicago EC2 Account</a>
+      </dt>
+      <dd>
+        By Daniel X. O'Neil on
+        <cite>Smart Chicago Collaborative Blog</cite>
+        | Dec 20, 2012
+      </dd>
+      <dt>
+        <a href="http://www.wbez.org/news/mayor-emanuel-touts-expansion-chicago%E2%80%99s-open-data-effort-and-why-you-should-care-104344">Mayor Emanuel touts expansion of Chicago’s open data effort, and this is why you should care</a>
+      </dt>
+      <dd>
+        By Elliott Ramos on
+        <cite>WBEZ</cite>
+        | Dec 12, 2012
+      </dd>
+      <dt>
+        <a href="http://digital.cityofchicago.org/index.php/doctors-devs-and-the-flu/">Doctors, Devs, and the Flu</a>
+      </dt>
+      <dd>
+        <cite>Chicago Digital</cite>
+        | Dec 3, 2012
+      </dd>
+      <dt>
+        <a href="http://www.huffingtonpost.com/derek-eder/chicago-public-schools-locator-map_b_2119284.html">Hacking Chicago</a>
+      </dt>
+      <dd>
+        By Derek Eder on
+        <cite>Huffington Post</cite>
+        | Nov 12, 2012
+      </dd>
+      <dt>
+        <a href="http://www.smartchicagocollaborative.org/center-for-neighborhood-technology-urban-sustainability-hackathon/">Center for Neighborhood Technology Urban Sustainability Hackathon</a>
+      </dt>
+      <dd>
+        By Daniel X. O'neil on
+        <cite>Smart Chicago Collaborative Blog</cite>
+        | Oct 28, 2012
+      </dd>
+      <dt>
+        <a href="http://www.outsidetheloopradio.com/2012/10/27/otl-episode-315-il-science-council-pawn-shop-update-chicagolobbyists-org/">IL Science Council, Pawn shop update, Chicagolobbyists.org</a>
+        (audio)
+      </dt>
+      <dd>
+        <cite>Outside the Loop RADIO</cite>
+        | Oct 27, 2012
+      </dd>
+      <dt>
+        <a href="http://codeforamerica.org/2012/10/11/brigade-spotlight-chicago/">Brigade Spotlight: Chicago</a>
+      </dt>
+      <dd>
+        By Christopher Whitaker on
+        <cite>Code for America Blog</cite>
+        | Oct 11, 2012
+      </dd>
+      <dt>
+        <a href="http://gov20.govfresh.com/open-city-launches-new-civic-app-to-map-crime-in-chicago/">Open City launches new civic app to map crime in Chicago</a>
+      </dt>
+      <dd>
+        By Alex Howard on
+        <cite>govfresh</cite>
+        | June 26, 2012
+      </dd>
+      <dt>
+        <a href="http://blog.cookcountygov.com/opencc/live-streaming-event-changing-the-code-government-data-and-digital-entrepreneurship/">Changing The Code: Government Data And Digital Entrepreneurship</a>
+        (video)
+      </dt>
+      <dd>
+        <cite>
+          Cook County
+        </cite>
+        | April 25, 2012
+      </dd>
+      <dt>
+        <a href="http://blogs.edweek.org/edweek/parentsandthepublic/">App Helps Figure Odds for Chicago's Elite High School Seats</a>
+      </dt>
+      <dd>
+        <cite>
+          Education Week
+        </cite>
+        | March 23, 2012
+      </dd>
+      <dt>
+        <a href="http://codeforamerica.org/2012/03/15/educating-chicago/">Educating Chicago</a>
+      </dt>
+      <dd>
+        By Ben Sheldon on
+        <cite>
+          Code for America Blog
+        </cite>
+        | March 15, 2012
+      </dd>
+      <dt>
+        <a href="http://chicagotonight.wttw.com/2012/03/09/chicago-public-school-tiers">Chicago Public School Tiers: New app to help CPS applicants</a>
+      </dt>
+      <dd>
+        <cite>
+          Chicago Tonight
+          (WTTW)
+        </cite>
+        | March 9, 2012
+      </dd>
+      <dt>
+        <a href="http://chicagoist.com/2012/03/08/new_web_app_makes_it_easier_for_cps.php">New Web App Makes It Easier For CPS Students To Get Into The Schools They Want</a>
+      </dt>
+      <dd>
+        <cite>
+          Chicagoist
+        </cite>
+        | March 8, 2012
+      </dd>
+      <dt>
+        <a href="http://www.ascentstage.com/archives/2012/02/shovel-ready/">Shovel Ready</a>
+      </dt>
+      <dd>
+        By John Tolva on
+        <cite>
+          Ascent Stage
+        </cite>
+        | February 21, 2012
+      </dd>
+      <dt>
+        <a href="http://chicagotonight.wttw.com/2012/01/31/chicago-data-apps">Chicago Data Apps Panel Discussion</a>
+        (video)
+      </dt>
+      <dd>
+        <cite>
+          Chicago Tonight
+          (WTTW)
+        </cite>
+        | January 31, 2012
+      </dd>
+      <dt>
+        <a href="http://news.medill.northwestern.edu/chicago/news.aspx?id=199203">Civic startup Open City makes Chicago more transparent</a>
+      </dt>
+      <dd>
+        By Marisa Paulson on
+        <cite>Medill Reports</cite>
+        | January 26, 2012
+      </dd>
+      <dt>
+        <a href="http://techpresident.com/news/21676/san-francisco-push-accelerate-government-20-economic-development-tool-could-just-be">San Francisco's Plan: Open Government, Open Data, Open Doors to New Business and Better Services</a>
+      </dt>
+      <dd>
+        By Sarah Lai Stirland on
+        <cite>Tech President</cite>
+        | January 24 2012
+      </dd>
+      <dt>
+        <a href="http://www.chicagotribune.com/news/ct-talk-snow-tracker-0121-20120121,0,4501133.story">What streets have been plowed, and when? Check the Web</a>
+      </dt>
+      <dd>
+        By Naomi Nix on
+        <cite>The Chicago Tribune</cite>
+        | January 21, 2012
+      </dd>
+      <dt>
+        <a href="http://gridchicago.com/2012/new-plow-tracker-style-website-hits-the-web-in-time-for-todays-snow-storm/">New plow tracker-style website hits the web in time for today’s snow storm</a>
+      </dt>
+      <dd>
+        By Steven Vance on
+        <cite>Grid Chicago</cite>
+        | January 20, 2012
+      </dd>
+      <dt>
+        <a href="http://www.ascentstage.com/archives/2012/01/open-data-in-chicago/">Open data in Chicago: progress and direction</a>
+      </dt>
+      <dd>
+        By John Tolva on
+        <cite>
+          Ascent Stage
+        </cite>
+        | January 1, 2012
+      </dd>
+      <dt>
+        <a href="http://chicagoist.com/2011/12/07/new_web_project_simplifies_citys_op.php#photo-1">New Web Project Simplifies City's Open Lobbying Data</a>
+      </dt>
+      <dd>
+        By Chuck Sudo on
+        <cite>Chicagost</cite>
+        | December 7, 2011
+      </dd>
+      <dt>
+        <a href="http://gov20.govfresh.com/can-the-internet-help-disrupt-the-power-of-chicago-lobbyists-through-transparency/">Can the Internet help disrupt the power of Chicago Lobbyists through transparency?</a>
+      </dt>
+      <dd>
+        By Alex Howard on
+        <cite>govfresh</cite>
+        | December 7, 2011
+      </dd>
+      <dt>
+        <a href="http://gov20.govfresh.com/chicagobuildings-org-maps-vacant-and-abandoned-buildings-using-open-government-data/">Chicagobuildings.org maps vacant and abandoned buildings using open government data</a>
+      </dt>
+      <dd>
+        By Alex Howard on
+        <cite>govfresh</cite>
+        | October 12 2011
+      </dd>
+      <dt>
+        <a href="http://govfresh.com/2011/09/beautiful-budgets-look-at-cook/">Beautiful budgets? Look at Cook</a>
+      </dt>
+      <dd>
+        By Luke Fretwell on
+        <cite>govfresh</cite>
+        | September 12 2011
+      </dd>
+      <dt>
+        <a href="http://radar.oreilly.com/2011/09/look-at-cook-gov-data-visualization.html">Look at Cook sets a high bar for open government data visualizations</a>
+      </dt>
+      <dd>
+        By Alex Howard on
+        <cite>O'Reilly Radar</cite>
+        | September 7 2011
+      </dd>
+      <dt>
+        <a href="http://www.cityofchicago.org/city/en/depts/mayor/press_room/press_releases/2011/august_2011/mayor_emanuel_announcesnewlobbyistdatathatprovidesclearconnectio.html">Mayor Emanuel Announces New Lobbyist Data that Provides Clear Connection From Employers to Lobbyists to City Hall</a>
+      </dt>
+      <dd>By Mayor's Press office, City of Chicago | August 30th 2011</dd>
+    </dl>
+  </div>
+
+    <div id='footer'>
+      <div class='content'>
+        Follow our work on
+        <a href='https://github.com/open-city'>
+          Github
+        </a>
+        and
+        <a href='https://twitter.com/opencityapps'>
+          Twitter
+        </a>
+        or get in touch at
+        <a href="mailto:info@opencityapps.org">info@opencityapps.org</a>.
+      </div>
+    </div>
+  </div>
+    <script type="text/javascript" src="/javascripts/jquery.ba-hashchange.js"></script>
+    <script type="text/javascript" src="/javascripts/analytics_lib.js"></script>
+  </body>
+</html>

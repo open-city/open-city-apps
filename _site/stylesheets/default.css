@@ -1,0 +1,128 @@
+/*-------------------------+
+ | Site: Open City         |
+ | Part: Master stylesheet |
+ +-------------------------*/
+
+
+/* Imports
+ * =====================================================================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800);
+@import "reset.css";
+
+
+/* Fonts
+======================================================================*/
+body { font-family: "Open Sans", Arial, sans-serif; }
+
+
+/* Basics
+======================================================================*/
+a { color: #1478bc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+body { background: url(../images/bg.png) repeat-x 0 0 fixed; font-size: 16px; line-height: 1.4; }
+cite, em { font-style: italic; }
+dl, ol, table, p, ul { margin-bottom: 2em; }
+h1 { margin-bottom: 20px; }
+h1 img { width: 599px; }
+h2 { font-size: 28px; font-weight: 300; margin-bottom: 20px; }
+h3 { font-size: 23px; font-weight: 600; }
+strong { font-weight: bold; }
+
+/* Layout
+======================================================================*/
+.clear { clear: both; }
+.content { background: #fff; background: rgba(255, 255, 255, 0.9); border-radius: 7px; box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); margin: 0 auto 20px; overflow: hidden; padding: 15px 20px; width: 940px; }
+
+/* About */
+#about { padding-top: 75px; }
+#about-primary { float: left; width: 61.02%; }
+#about-secondary { float: right; width: 29.48%; }
+#about-secondary a {
+  color: #fff;
+  vertical-align: top;
+}
+
+/* Content
+======================================================================*/
+
+/* About */
+#about .content { background: none; box-shadow: none; margin-bottom: 0; padding-right: 0; width: 955px; }
+
+/* Columns */
+.c2l, .c2r { width: 48%; }
+.c2l, .c3l, .c3m { float: left; }
+.c2r, .c3r { float: right; }
+.c2r ul { margin-top: 0 }
+.c3l { margin-right: 3%; }
+.c3l, .c3m, .c3r { width: 31%; }
+
+/* Icons */
+[class *= "icon"] { background-repeat: no-repeat; background-position: 0 50%; line-height: 1; margin-right: 0.25em; padding: 3px 0 3px 20px; }
+.icon-github { background-image: url(/images/git.png); }
+.icon-twitter { background-image: url(/images/twitter.png); }
+
+/* Muted text */
+.mute { color: #999; font-size: .8em; }
+
+/* Nav */
+#nav {
+  background: #222222;
+  background: -moz-linear-gradient(top, #222222 0%, #050505 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222222), color-stop(100%,#050505));
+  background: -webkit-linear-gradient(top, #222222 0%,#050505 100%);
+  background: -o-linear-gradient(top, #222222 0%,#050505 100%);
+  background: -ms-linear-gradient(top, #222222 0%,#050505 100%);
+  background: linear-gradient(top, #222222 0%,#050505 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#050505',GradientType=0 );
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+  font-weight: 300;
+  overflow: hidden;
+  margin-bottom: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#nav a { color: #ccc; display: block; padding: 0.5em 1em; }
+#nav a.current, #nav a.current:hover { color: #fff; }
+#nav a:hover { background: rgba(255, 255, 255, 0.05); color: #fff; text-decoration: none; }
+#nav .content { background: none; box-shadow: none; margin-bottom: 0; padding: 0; }
+#nav li { float: left; }
+
+/* People */
+.people { font-size: 14px; list-style: none; margin: 0; }
+.people h3 { font-size: 20px; font-weight: bold; }
+.people li { float: left; margin-right: 3%; width: 22%; }
+.people li:last-child { margin: 0; }
+
+/* Press */
+#press dd { color: #888; font-size: 13px; margin-bottom: 0.75em; }
+
+.press {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 2em;
+  -webkit-column-gap: 2em;
+  column-gap: 2em;
+}
+
+/* Sites */
+#sites dd, #sites dt { padding: 0 0 8px 308px; }
+#sites img { border: 1px solid #ddd; float: left; margin: 3px 0 25px -308px; width: 288px; }
+#sites dt { clear: both; font-size: 25px; font-weight: 700; padding-top: 25px; }
+#sites dt:first-child { padding-top: 0; }
+
+/* Tools */
+#tools dt { font-size: 25px; font-weight: 700; padding-top: 25px; }
+#tools dt:first-child { padding-top: 0; }
+
+/* Twitter widget */
+#twitter { background: rgba(255, 255, 255, 0.3); border-radius: 7px; padding: 15px; }
+#twitter .twtr-ft div { padding: 0; }
+#twitter .twtr-hd { padding: 0 0 10px; }
+#twitter .twtr-tweet { border: 0; margin-bottom: 1em; }
+#twitter .twtr-tweet-wrap { padding: 0; }
+#twitter .twtr-widget { font-size: 13px !important; }
+#twitter .twtr-widget p { line-height: 1.4 !important; }
